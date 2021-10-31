@@ -117,7 +117,7 @@
         var password = $('#CustomerPassword').val();
         var address = $('#floatingTextarea').val();
 
-        console.log(`${fname} ${lname} ${email} ${password} ${address}`);
+        
         $.ajax({
           url: './php/adduser.php',
           type: 'POST',
