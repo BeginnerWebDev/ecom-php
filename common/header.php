@@ -51,9 +51,9 @@
             <div class="col-2 col-sm-4 col-md-3 col-lg-4 text-right">
                 <span class="user-menu d-block d-lg-none"><i class="anm anm-user-al" aria-hidden="true"></i></span>
                 <ul class="customer-links list-inline">
-                    <li><a href="login.html">Login</a></li>
-                    <li><a href="register.html">Create Account</a></li>
-                    <li><a href="wishlist.html">Wishlist</a></li>
+                    <li><a href="login.php">Login</a></li>
+                    <li><a href="register.php">Create Account</a></li>
+                    <li><a href="wishlist.php">Wishlist</a></li>
                 </ul>
             </div>
         </div>
@@ -66,7 +66,7 @@
         <div class="row align-items-center">
             <!--Desktop Logo-->
             <div class="logo col-md-2 col-lg-2 d-none d-lg-block">
-                <a href="index.html">
+                <a href="index.php">
                     <img src="assets/images/logo.svg" alt="Belle Multipurpose Html Template" title="Belle Multipurpose Html Template" />
                 </a>
             </div>
@@ -97,29 +97,29 @@
                                                 <a href="#" class="site-nav lvl-1">Home Group 1</a>
                                                 <ul class="subLinks">
                                                     <li class="lvl-2">
-                                                        <a href="index.html" class="site-nav lvl-2">Home 1 - Classic</a>
+                                                        <a href="index.php" class="site-nav lvl-2">Home 1 - Classic</a>
                                                     </li>
                                                     <li class="lvl-2">
-                                                        <a href="home2-default.html" class="site-nav lvl-2">Home 2 - Default</a>
+                                                        <a href="home2-default.php" class="site-nav lvl-2">Home 2 - Default</a>
                                                     </li>
                                                     <li class="lvl-2">
-                                                        <a href="home15-funiture.html" class="site-nav lvl-2">Home 15 - Furniture
+                                                        <a href="home15-funiture.php" class="site-nav lvl-2">Home 15 - Furniture
                                                             <span class="lbl nm_label1">New</span></a>
                                                     </li>
                                                     <li class="lvl-2">
-                                                        <a href="home3-boxed.html" class="site-nav lvl-2">Home 3 - Boxed</a>
+                                                        <a href="home3-boxed.php" class="site-nav lvl-2">Home 3 - Boxed</a>
                                                     </li>
                                                     <li class="lvl-2">
-                                                        <a href="home4-fullwidth.html" class="site-nav lvl-2">Home 4 - Fullwidth</a>
+                                                        <a href="home4-fullwidth.php" class="site-nav lvl-2">Home 4 - Fullwidth</a>
                                                     </li>
                                                     <li class="lvl-2">
-                                                        <a href="home5-cosmetic.html" class="site-nav lvl-2">Home 5 - Cosmetic</a>
+                                                        <a href="home5-cosmetic.php" class="site-nav lvl-2">Home 5 - Cosmetic</a>
                                                     </li>
                                                     <li class="lvl-2">
-                                                        <a href="home6-modern.html" class="site-nav lvl-2">Home 6 - Modern</a>
+                                                        <a href="home6-modern.php" class="site-nav lvl-2">Home 6 - Modern</a>
                                                     </li>
                                                     <li class="lvl-2">
-                                                        <a href="home7-shoes.html" class="site-nav lvl-2">Home 7 - Shoes</a>
+                                                        <a href="home7-shoes.php" class="site-nav lvl-2">Home 7 - Shoes</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -127,25 +127,25 @@
                                                 <a href="#" class="site-nav lvl-1">Home Group 2</a>
                                                 <ul class="subLinks">
                                                     <li class="lvl-2">
-                                                        <a href="home8-jewellery.html" class="site-nav lvl-2">Home 8 - Jewellery</a>
+                                                        <a href="home8-jewellery.php" class="site-nav lvl-2">Home 8 - Jewellery</a>
                                                     </li>
                                                     <li class="lvl-2">
-                                                        <a href="home9-parallax.html" class="site-nav lvl-2">Home 9 - Parallax</a>
+                                                        <a href="home9-parallax.php" class="site-nav lvl-2">Home 9 - Parallax</a>
                                                     </li>
                                                     <li class="lvl-2">
-                                                        <a href="home10-minimal.html" class="site-nav lvl-2">Home 10 - Minimal</a>
+                                                        <a href="home10-minimal.php" class="site-nav lvl-2">Home 10 - Minimal</a>
                                                     </li>
                                                     <li class="lvl-2">
-                                                        <a href="home11-grid.html" class="site-nav lvl-2">Home 11 - Grid</a>
+                                                        <a href="home11-grid.php" class="site-nav lvl-2">Home 11 - Grid</a>
                                                     </li>
                                                     <li class="lvl-2">
-                                                        <a href="home12-category.html" class="site-nav lvl-2">Home 12 - Category</a>
+                                                        <a href="home12-category.php" class="site-nav lvl-2">Home 12 - Category</a>
                                                     </li>
                                                     <li class="lvl-2">
-                                                        <a href="home13-auto-parts.html" class="site-nav lvl-2">Home 13 - Auto Parts</a>
+                                                        <a href="home13-auto-parts.php" class="site-nav lvl-2">Home 13 - Auto Parts</a>
                                                     </li>
                                                     <li class="lvl-2">
-                                                        <a href="home14-bags.html" class="site-nav lvl-2">Home 14 - Bags
+                                                        <a href="home14-bags.php" class="site-nav lvl-2">Home 14 - Bags
                                                             <span class="lbl nm_label1">New</span></a>
                                                     </li>
                                                 </ul>
@@ -154,22 +154,22 @@
                                                 <a href="#" class="site-nav lvl-1">New Sections</a>
                                                 <ul class="subLinks">
                                                     <li class="lvl-2">
-                                                        <a href="home11-grid.html" class="site-nav lvl-2">Image Gallery</a>
+                                                        <a href="home11-grid.php" class="site-nav lvl-2">Image Gallery</a>
                                                     </li>
                                                     <li class="lvl-2">
-                                                        <a href="home5-cosmetic.html" class="site-nav lvl-2">Featured Product</a>
+                                                        <a href="home5-cosmetic.php" class="site-nav lvl-2">Featured Product</a>
                                                     </li>
                                                     <li class="lvl-2">
-                                                        <a href="home7-shoes.html" class="site-nav lvl-2">Columns with Items</a>
+                                                        <a href="home7-shoes.php" class="site-nav lvl-2">Columns with Items</a>
                                                     </li>
                                                     <li class="lvl-2">
-                                                        <a href="home6-modern.html" class="site-nav lvl-2">Text columns with images</a>
+                                                        <a href="home6-modern.php" class="site-nav lvl-2">Text columns with images</a>
                                                     </li>
                                                     <li class="lvl-2">
-                                                        <a href="home2-default.html" class="site-nav lvl-2">Products Carousel</a>
+                                                        <a href="home2-default.php" class="site-nav lvl-2">Products Carousel</a>
                                                     </li>
                                                     <li class="lvl-2">
-                                                        <a href="home9-parallax.html" class="site-nav lvl-2">Parallax Banner</a>
+                                                        <a href="home9-parallax.php" class="site-nav lvl-2">Parallax Banner</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -177,7 +177,7 @@
                                                 <a href="#" class="site-nav lvl-1">New Features</a>
                                                 <ul class="subLinks">
                                                     <li class="lvl-2">
-                                                        <a href="home13-auto-parts.html" class="site-nav lvl-2">Top Information Bar
+                                                        <a href="home13-auto-parts.php" class="site-nav lvl-2">Top Information Bar
                                                             <span class="lbl nm_label1">New</span></a>
                                                     </li>
                                                     <li class="lvl-2">
@@ -215,31 +215,31 @@
                                         <a href="#" class="site-nav lvl-1">Shop Pages</a>
                                         <ul class="subLinks">
                                             <li class="lvl-2">
-                                                <a href="shop-left-sidebar.html" class="site-nav lvl-2">Left Sidebar</a>
+                                                <a href="shop-left-sidebar.php" class="site-nav lvl-2">Left Sidebar</a>
                                             </li>
                                             <li class="lvl-2">
-                                                <a href="shop-right-sidebar.html" class="site-nav lvl-2">Right Sidebar</a>
+                                                <a href="shop-right-sidebar.php" class="site-nav lvl-2">Right Sidebar</a>
                                             </li>
                                             <li class="lvl-2">
-                                                <a href="shop-fullwidth.html" class="site-nav lvl-2">Fullwidth</a>
+                                                <a href="shop-fullwidth.php" class="site-nav lvl-2">Fullwidth</a>
                                             </li>
                                             <li class="lvl-2">
-                                                <a href="shop-grid-3.html" class="site-nav lvl-2">3 items per row</a>
+                                                <a href="shop-grid-3.php" class="site-nav lvl-2">3 items per row</a>
                                             </li>
                                             <li class="lvl-2">
-                                                <a href="shop-grid-4.html" class="site-nav lvl-2">4 items per row</a>
+                                                <a href="shop-grid-4.php" class="site-nav lvl-2">4 items per row</a>
                                             </li>
                                             <li class="lvl-2">
-                                                <a href="shop-grid-5.html" class="site-nav lvl-2">5 items per row</a>
+                                                <a href="shop-grid-5.php" class="site-nav lvl-2">5 items per row</a>
                                             </li>
                                             <li class="lvl-2">
-                                                <a href="shop-grid-6.html" class="site-nav lvl-2">6 items per row</a>
+                                                <a href="shop-grid-6.php" class="site-nav lvl-2">6 items per row</a>
                                             </li>
                                             <li class="lvl-2">
-                                                <a href="shop-grid-7.html" class="site-nav lvl-2">7 items per row</a>
+                                                <a href="shop-grid-7.php" class="site-nav lvl-2">7 items per row</a>
                                             </li>
                                             <li class="lvl-2">
-                                                <a href="shop-listview.html" class="site-nav lvl-2">Product Listview</a>
+                                                <a href="shop-listview.php" class="site-nav lvl-2">Product Listview</a>
                                             </li>
                                         </ul>
                                     </li>
@@ -247,33 +247,33 @@
                                         <a href="#" class="site-nav lvl-1">Shop Features</a>
                                         <ul class="subLinks">
                                             <li class="lvl-2">
-                                                <a href="shop-left-sidebar.html" class="site-nav lvl-2">Product Countdown
+                                                <a href="shop-left-sidebar.php" class="site-nav lvl-2">Product Countdown
                                                     <span class="lbl nm_label3">Hot</span></a>
                                             </li>
                                             <li class="lvl-2">
-                                                <a href="shop-right-sidebar.html" class="site-nav lvl-2">Infinite Scrolling</a>
+                                                <a href="shop-right-sidebar.php" class="site-nav lvl-2">Infinite Scrolling</a>
                                             </li>
                                             <li class="lvl-2">
-                                                <a href="shop-grid-3.html" class="site-nav lvl-2">Pagination - Classic</a>
+                                                <a href="shop-grid-3.php" class="site-nav lvl-2">Pagination - Classic</a>
                                             </li>
                                             <li class="lvl-2">
-                                                <a href="shop-grid-6.html" class="site-nav lvl-2">Pagination - Load More</a>
+                                                <a href="shop-grid-6.php" class="site-nav lvl-2">Pagination - Load More</a>
                                             </li>
                                             <li class="lvl-2">
-                                                <a href="product-labels.html" class="site-nav lvl-2">Dynamic Product Labels</a>
+                                                <a href="product-labels.php" class="site-nav lvl-2">Dynamic Product Labels</a>
                                             </li>
                                             <li class="lvl-2">
-                                                <a href="product-swatches-style.html" class="site-nav lvl-2">Product Swatches
+                                                <a href="product-swatches-style.php" class="site-nav lvl-2">Product Swatches
                                                     <span class="lbl nm_label2">Sale</span></a>
                                             </li>
                                             <li class="lvl-2">
-                                                <a href="product-hover-info.html" class="site-nav lvl-2">Product Hover Info</a>
+                                                <a href="product-hover-info.php" class="site-nav lvl-2">Product Hover Info</a>
                                             </li>
                                             <li class="lvl-2">
-                                                <a href="shop-grid-3.html" class="site-nav lvl-2">Product Reviews</a>
+                                                <a href="shop-grid-3.php" class="site-nav lvl-2">Product Reviews</a>
                                             </li>
                                             <li class="lvl-2">
-                                                <a href="shop-left-sidebar.html" class="site-nav lvl-2">Discount Label
+                                                <a href="shop-left-sidebar.php" class="site-nav lvl-2">Discount Label
                                                     <span class="lbl nm_label1">New</span></a>
                                             </li>
                                         </ul>
@@ -294,22 +294,22 @@
                                                 <a href="#" class="site-nav lvl-1">Product Page</a>
                                                 <ul class="subLinks">
                                                     <li class="lvl-2">
-                                                        <a href="product-layout-1.html" class="site-nav lvl-2">Product Layout 1</a>
+                                                        <a href="product-layout-1.php" class="site-nav lvl-2">Product Layout 1</a>
                                                     </li>
                                                     <li class="lvl-2">
-                                                        <a href="product-layout-2.html" class="site-nav lvl-2">Product Layout 2</a>
+                                                        <a href="product-layout-2.php" class="site-nav lvl-2">Product Layout 2</a>
                                                     </li>
                                                     <li class="lvl-2">
-                                                        <a href="product-layout-3.html" class="site-nav lvl-2">Product Layout 3</a>
+                                                        <a href="product-layout-3.php" class="site-nav lvl-2">Product Layout 3</a>
                                                     </li>
                                                     <li class="lvl-2">
-                                                        <a href="product-with-left-thumbs.html" class="site-nav lvl-2">Product With Left Thumbs</a>
+                                                        <a href="product-with-left-thumbs.php" class="site-nav lvl-2">Product With Left Thumbs</a>
                                                     </li>
                                                     <li class="lvl-2">
-                                                        <a href="product-with-right-thumbs.html" class="site-nav lvl-2">Product With Right Thumbs</a>
+                                                        <a href="product-with-right-thumbs.php" class="site-nav lvl-2">Product With Right Thumbs</a>
                                                     </li>
                                                     <li class="lvl-2">
-                                                        <a href="product-with-bottom-thumbs.html" class="site-nav lvl-2">Product With Bottom Thumbs</a>
+                                                        <a href="product-with-bottom-thumbs.php" class="site-nav lvl-2">Product With Bottom Thumbs</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -317,23 +317,23 @@
                                                 <a href="#" class="site-nav lvl-1">Product Features</a>
                                                 <ul class="subLinks">
                                                     <li class="lvl-2">
-                                                        <a href="short-description.html" class="site-nav lvl-2">Short Description</a>
+                                                        <a href="short-description.php" class="site-nav lvl-2">Short Description</a>
                                                     </li>
                                                     <li class="lvl-2">
-                                                        <a href="product-countdown.html" class="site-nav lvl-2">Product Countdown</a>
+                                                        <a href="product-countdown.php" class="site-nav lvl-2">Product Countdown</a>
                                                     </li>
                                                     <li class="lvl-2">
-                                                        <a href="product-video.html" class="site-nav lvl-2">Product Video</a>
+                                                        <a href="product-video.php" class="site-nav lvl-2">Product Video</a>
                                                     </li>
                                                     <li class="lvl-2">
-                                                        <a href="product-quantity-message.html" class="site-nav lvl-2">Product Quantity Message</a>
+                                                        <a href="product-quantity-message.php" class="site-nav lvl-2">Product Quantity Message</a>
                                                     </li>
                                                     <li class="lvl-2">
-                                                        <a href="product-visitor-sold-count.html" class="site-nav lvl-2">Product Visitor/Sold Count
+                                                        <a href="product-visitor-sold-count.php" class="site-nav lvl-2">Product Visitor/Sold Count
                                                             <span class="lbl nm_label3">Hot</span></a>
                                                     </li>
                                                     <li class="lvl-2">
-                                                        <a href="product-zoom-lightbox.html" class="site-nav lvl-2">Product Zoom/Lightbox
+                                                        <a href="product-zoom-lightbox.php" class="site-nav lvl-2">Product Zoom/Lightbox
                                                             <span class="lbl nm_label1">New</span></a>
                                                     </li>
                                                 </ul>
@@ -342,22 +342,22 @@
                                                 <a href="#" class="site-nav lvl-1">Product Features</a>
                                                 <ul class="subLinks">
                                                     <li class="lvl-2">
-                                                        <a href="product-with-variant-image.html" class="site-nav lvl-2">Product with Variant Image</a>
+                                                        <a href="product-with-variant-image.php" class="site-nav lvl-2">Product with Variant Image</a>
                                                     </li>
                                                     <li class="lvl-2">
-                                                        <a href="product-with-color-swatch.html" class="site-nav lvl-2">Product with Color Swatch</a>
+                                                        <a href="product-with-color-swatch.php" class="site-nav lvl-2">Product with Color Swatch</a>
                                                     </li>
                                                     <li class="lvl-2">
-                                                        <a href="product-with-image-swatch.html" class="site-nav lvl-2">Product with Image Swatch</a>
+                                                        <a href="product-with-image-swatch.php" class="site-nav lvl-2">Product with Image Swatch</a>
                                                     </li>
                                                     <li class="lvl-2">
-                                                        <a href="product-with-dropdown.html" class="site-nav lvl-2">Product with Dropdown</a>
+                                                        <a href="product-with-dropdown.php" class="site-nav lvl-2">Product with Dropdown</a>
                                                     </li>
                                                     <li class="lvl-2">
-                                                        <a href="product-with-rounded-square.html" class="site-nav lvl-2">Product with Rounded Square</a>
+                                                        <a href="product-with-rounded-square.php" class="site-nav lvl-2">Product with Rounded Square</a>
                                                     </li>
                                                     <li class="lvl-2">
-                                                        <a href="swatches-style.html" class="site-nav lvl-2">Product Swatches All Style</a>
+                                                        <a href="swatches-style.php" class="site-nav lvl-2">Product Swatches All Style</a>
                                                     </li>
                                                 </ul>
                                             </li>
@@ -365,23 +365,23 @@
                                                 <a href="#" class="site-nav lvl-1">Product Features</a>
                                                 <ul class="subLinks">
                                                     <li class="lvl-2">
-                                                        <a href="product-accordion.html" class="site-nav lvl-2">Product Accordion</a>
+                                                        <a href="product-accordion.php" class="site-nav lvl-2">Product Accordion</a>
                                                     </li>
                                                     <li class="lvl-2">
-                                                        <a href="product-pre-orders.html" class="site-nav lvl-2">Product Pre-orders
+                                                        <a href="product-pre-orders.php" class="site-nav lvl-2">Product Pre-orders
                                                             <span class="lbl nm_label1">New</span></a>
                                                     </li>
                                                     <li class="lvl-2">
-                                                        <a href="product-labels-detail.html" class="site-nav lvl-2">Product Labels</a>
+                                                        <a href="product-labels-detail.php" class="site-nav lvl-2">Product Labels</a>
                                                     </li>
                                                     <li class="lvl-2">
-                                                        <a href="product-discount.html" class="site-nav lvl-2">Product Discount In %</a>
+                                                        <a href="product-discount.php" class="site-nav lvl-2">Product Discount In %</a>
                                                     </li>
                                                     <li class="lvl-2">
-                                                        <a href="product-shipping-message.html" class="site-nav lvl-2">Product Shipping Message</a>
+                                                        <a href="product-shipping-message.php" class="site-nav lvl-2">Product Shipping Message</a>
                                                     </li>
                                                     <li class="lvl-2">
-                                                        <a href="size-guide.html" class="site-nav lvl-2">Size Guide
+                                                        <a href="size-guide.php" class="site-nav lvl-2">Size Guide
                                                             <span class="lbl nm_label1">New</span></a>
                                                     </li>
                                                 </ul>
@@ -398,52 +398,52 @@
                             <a href="#">Pages <i class="anm anm-angle-down-l"></i></a>
                             <ul class="dropdown">
                                 <li>
-                                    <a href="cart-variant1.html" class="site-nav">Cart Page <i class="anm anm-angle-right-l"></i></a>
+                                    <a href="cart-variant1.php" class="site-nav">Cart Page <i class="anm anm-angle-right-l"></i></a>
                                     <ul class="dropdown">
                                         <li>
-                                            <a href="cart-variant1.html" class="site-nav">Cart Variant1</a>
+                                            <a href="cart-variant1.php" class="site-nav">Cart Variant1</a>
                                         </li>
                                         <li>
-                                            <a href="cart-variant2.html" class="site-nav">Cart Variant2</a>
+                                            <a href="cart-variant2.php" class="site-nav">Cart Variant2</a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="compare-variant1.html" class="site-nav">Compare Product <i class="anm anm-angle-right-l"></i></a>
+                                    <a href="compare-variant1.php" class="site-nav">Compare Product <i class="anm anm-angle-right-l"></i></a>
                                     <ul class="dropdown">
                                         <li>
-                                            <a href="compare-variant1.html" class="site-nav">Compare Variant1</a>
+                                            <a href="compare-variant1.php" class="site-nav">Compare Variant1</a>
                                         </li>
                                         <li>
-                                            <a href="compare-variant2.html" class="site-nav">Compare Variant2</a>
+                                            <a href="compare-variant2.php" class="site-nav">Compare Variant2</a>
                                         </li>
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="checkout.html" class="site-nav">Checkout</a>
+                                    <a href="checkout.php" class="site-nav">Checkout</a>
                                 </li>
                                 <li>
-                                    <a href="about-us.html" class="site-nav">About Us <span class="lbl nm_label1">New</span>
+                                    <a href="about-us.php" class="site-nav">About Us <span class="lbl nm_label1">New</span>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="contact-us.html" class="site-nav">Contact Us</a>
+                                    <a href="contact-us.php" class="site-nav">Contact Us</a>
                                 </li>
-                                <li><a href="faqs.html" class="site-nav">FAQs</a></li>
+                                <li><a href="faqs.php" class="site-nav">FAQs</a></li>
                                 <li>
-                                    <a href="lookbook1.html" class="site-nav">Lookbook<i class="anm anm-angle-right-l"></i></a>
+                                    <a href="lookbook1.php" class="site-nav">Lookbook<i class="anm anm-angle-right-l"></i></a>
                                     <ul>
                                         <li>
-                                            <a href="lookbook1.html" class="site-nav">Style 1</a>
+                                            <a href="lookbook1.php" class="site-nav">Style 1</a>
                                         </li>
                                         <li>
-                                            <a href="lookbook2.html" class="site-nav">Style 2</a>
+                                            <a href="lookbook2.php" class="site-nav">Style 2</a>
                                         </li>
                                     </ul>
                                 </li>
-                                <li><a href="404.html" class="site-nav">404</a></li>
+                                <li><a href="404.php" class="site-nav">404</a></li>
                                 <li>
-                                    <a href="coming-soon.html" class="site-nav">Coming soon <span class="lbl nm_label1">New</span>
+                                    <a href="coming-soon.php" class="site-nav">Coming soon <span class="lbl nm_label1">New</span>
                                     </a>
                                 </li>
                             </ul>
@@ -452,19 +452,19 @@
                             <a href="#">Blog <i class="anm anm-angle-down-l"></i></a>
                             <ul class="dropdown">
                                 <li>
-                                    <a href="blog-left-sidebar.html" class="site-nav">Left Sidebar</a>
+                                    <a href="blog-left-sidebar.php" class="site-nav">Left Sidebar</a>
                                 </li>
                                 <li>
-                                    <a href="blog-right-sidebar.html" class="site-nav">Right Sidebar</a>
+                                    <a href="blog-right-sidebar.php" class="site-nav">Right Sidebar</a>
                                 </li>
                                 <li>
-                                    <a href="blog-fullwidth.html" class="site-nav">Fullwidth</a>
+                                    <a href="blog-fullwidth.php" class="site-nav">Fullwidth</a>
                                 </li>
                                 <li>
-                                    <a href="blog-grid-view.html" class="site-nav">Gridview</a>
+                                    <a href="blog-grid-view.php" class="site-nav">Gridview</a>
                                 </li>
                                 <li>
-                                    <a href="blog-article.html" class="site-nav">Article</a>
+                                    <a href="blog-article.php" class="site-nav">Article</a>
                                 </li>
                             </ul>
                         </li>
@@ -481,7 +481,7 @@
           mobile-logo
         ">
                 <div class="logo">
-                    <a href="index.html">
+                    <a href="index.php">
                         <img src="assets/images/logo.svg" alt="Belle Multipurpose Html Template" title="Belle Multipurpose Html Template" />
                     </a>
                 </div>
@@ -502,7 +502,7 @@
                                 <div class="product-details">
                                     <a href="#" class="remove"><i class="anm anm-times-l" aria-hidden="true"></i></a>
                                     <a href="#" class="edit-i remove"><i class="anm anm-edit" aria-hidden="true"></i></a>
-                                    <a class="pName" href="cart.html">Sleeve Kimono Dress</a>
+                                    <a class="pName" href="cart.php">Sleeve Kimono Dress</a>
                                     <div class="variant-cart">Black / XL</div>
                                     <div class="wrapQtyBtn">
                                         <div class="qtyField">
@@ -526,7 +526,7 @@
                                 <div class="product-details">
                                     <a href="#" class="remove"><i class="anm anm-times-l" aria-hidden="true"></i></a>
                                     <a href="#" class="edit-i remove"><i class="anm anm-edit" aria-hidden="true"></i></a>
-                                    <a class="pName" href="cart.html">Elastic Waist Dress</a>
+                                    <a class="pName" href="cart.php">Elastic Waist Dress</a>
                                     <div class="variant-cart">Gray / XXL</div>
                                     <div class="wrapQtyBtn">
                                         <div class="qtyField">
@@ -549,8 +549,8 @@
                                 <span class="label">Cart Subtotal:</span><span class="product-price"><span class="money">$748.00</span></span>
                             </div>
                             <div class="buttonSet text-center">
-                                <a href="cart.html" class="btn btn-secondary btn--small">View Cart</a>
-                                <a href="checkout.html" class="btn btn-secondary btn--small">Checkout</a>
+                                <a href="cart.php" class="btn btn-secondary btn--small">View Cart</a>
+                                <a href="checkout.php" class="btn btn-secondary btn--small">Checkout</a>
                             </div>
                         </div>
                     </div>
@@ -573,35 +573,35 @@
     </div>
     <ul id="MobileNav" class="mobile-nav">
         <li class="lvl1 parent megamenu">
-            <a href="index.html">Home <i class="anm anm-plus-l"></i></a>
+            <a href="index.php">Home <i class="anm anm-plus-l"></i></a>
             <ul>
                 <li>
                     <a href="#" class="site-nav">Home Group 1<i class="anm anm-plus-l"></i></a>
                     <ul>
                         <li>
-                            <a href="index.html" class="site-nav">Home 1 - Classic</a>
+                            <a href="index.php" class="site-nav">Home 1 - Classic</a>
                         </li>
                         <li>
-                            <a href="home2-default.html" class="site-nav">Home 2 - Default</a>
+                            <a href="home2-default.php" class="site-nav">Home 2 - Default</a>
                         </li>
                         <li>
-                            <a href="home15-funiture.html" class="site-nav">Home 15 - Furniture
+                            <a href="home15-funiture.php" class="site-nav">Home 15 - Furniture
                             </a>
                         </li>
                         <li>
-                            <a href="home3-boxed.html" class="site-nav">Home 3 - Boxed</a>
+                            <a href="home3-boxed.php" class="site-nav">Home 3 - Boxed</a>
                         </li>
                         <li>
-                            <a href="home4-fullwidth.html" class="site-nav">Home 4 - Fullwidth</a>
+                            <a href="home4-fullwidth.php" class="site-nav">Home 4 - Fullwidth</a>
                         </li>
                         <li>
-                            <a href="home5-cosmetic.html" class="site-nav">Home 5 - Cosmetic</a>
+                            <a href="home5-cosmetic.php" class="site-nav">Home 5 - Cosmetic</a>
                         </li>
                         <li>
-                            <a href="home6-modern.html" class="site-nav">Home 6 - Modern</a>
+                            <a href="home6-modern.php" class="site-nav">Home 6 - Modern</a>
                         </li>
                         <li>
-                            <a href="home7-shoes.html" class="site-nav last">Home 7 - Shoes</a>
+                            <a href="home7-shoes.php" class="site-nav last">Home 7 - Shoes</a>
                         </li>
                     </ul>
                 </li>
@@ -609,25 +609,25 @@
                     <a href="#" class="site-nav">Home Group 2<i class="anm anm-plus-l"></i></a>
                     <ul>
                         <li>
-                            <a href="home8-jewellery.html" class="site-nav">Home 8 - Jewellery</a>
+                            <a href="home8-jewellery.php" class="site-nav">Home 8 - Jewellery</a>
                         </li>
                         <li>
-                            <a href="home9-parallax.html" class="site-nav">Home 9 - Parallax</a>
+                            <a href="home9-parallax.php" class="site-nav">Home 9 - Parallax</a>
                         </li>
                         <li>
-                            <a href="home10-minimal.html" class="site-nav">Home 10 - Minimal</a>
+                            <a href="home10-minimal.php" class="site-nav">Home 10 - Minimal</a>
                         </li>
                         <li>
-                            <a href="home11-grid.html" class="site-nav">Home 11 - Grid</a>
+                            <a href="home11-grid.php" class="site-nav">Home 11 - Grid</a>
                         </li>
                         <li>
-                            <a href="home12-category.html" class="site-nav">Home 12 - Category</a>
+                            <a href="home12-category.php" class="site-nav">Home 12 - Category</a>
                         </li>
                         <li>
-                            <a href="home13-auto-parts.html" class="site-nav">Home 13 - Auto Parts</a>
+                            <a href="home13-auto-parts.php" class="site-nav">Home 13 - Auto Parts</a>
                         </li>
                         <li>
-                            <a href="home14-bags.html" class="site-nav last">Home 14 - Bags</a>
+                            <a href="home14-bags.php" class="site-nav last">Home 14 - Bags</a>
                         </li>
                     </ul>
                 </li>
@@ -635,22 +635,22 @@
                     <a href="#" class="site-nav">New Sections<i class="anm anm-plus-l"></i></a>
                     <ul>
                         <li>
-                            <a href="home11-grid.html" class="site-nav">Image Gallery</a>
+                            <a href="home11-grid.php" class="site-nav">Image Gallery</a>
                         </li>
                         <li>
-                            <a href="home5-cosmetic.html" class="site-nav">Featured Product</a>
+                            <a href="home5-cosmetic.php" class="site-nav">Featured Product</a>
                         </li>
                         <li>
-                            <a href="home7-shoes.html" class="site-nav">Columns with Items</a>
+                            <a href="home7-shoes.php" class="site-nav">Columns with Items</a>
                         </li>
                         <li>
-                            <a href="home6-modern.html" class="site-nav">Text columns with images</a>
+                            <a href="home6-modern.php" class="site-nav">Text columns with images</a>
                         </li>
                         <li>
-                            <a href="home2-default.html" class="site-nav">Products Carousel</a>
+                            <a href="home2-default.php" class="site-nav">Products Carousel</a>
                         </li>
                         <li>
-                            <a href="home9-parallax.html" class="site-nav last">Parallax Banner</a>
+                            <a href="home9-parallax.php" class="site-nav last">Parallax Banner</a>
                         </li>
                     </ul>
                 </li>
@@ -658,7 +658,7 @@
                     <a href="#" class="site-nav">New Features<i class="anm anm-plus-l"></i></a>
                     <ul>
                         <li>
-                            <a href="home13-auto-parts.html" class="site-nav">Top Information Bar
+                            <a href="home13-auto-parts.php" class="site-nav">Top Information Bar
                             </a>
                         </li>
                         <li><a href="#" class="site-nav">Age Varification </a></li>
@@ -678,31 +678,31 @@
                     <a href="#" class="site-nav">Shop Pages<i class="anm anm-plus-l"></i></a>
                     <ul>
                         <li>
-                            <a href="shop-left-sidebar.html" class="site-nav">Left Sidebar</a>
+                            <a href="shop-left-sidebar.php" class="site-nav">Left Sidebar</a>
                         </li>
                         <li>
-                            <a href="shop-right-sidebar.html" class="site-nav">Right Sidebar</a>
+                            <a href="shop-right-sidebar.php" class="site-nav">Right Sidebar</a>
                         </li>
                         <li>
-                            <a href="shop-fullwidth.html" class="site-nav">Fullwidth</a>
+                            <a href="shop-fullwidth.php" class="site-nav">Fullwidth</a>
                         </li>
                         <li>
-                            <a href="shop-grid-3.html" class="site-nav">3 items per row</a>
+                            <a href="shop-grid-3.php" class="site-nav">3 items per row</a>
                         </li>
                         <li>
-                            <a href="shop-grid-4.html" class="site-nav">4 items per row</a>
+                            <a href="shop-grid-4.php" class="site-nav">4 items per row</a>
                         </li>
                         <li>
-                            <a href="shop-grid-5.html" class="site-nav">5 items per row</a>
+                            <a href="shop-grid-5.php" class="site-nav">5 items per row</a>
                         </li>
                         <li>
-                            <a href="shop-grid-6.html" class="site-nav">6 items per row</a>
+                            <a href="shop-grid-6.php" class="site-nav">6 items per row</a>
                         </li>
                         <li>
-                            <a href="shop-grid-7.html" class="site-nav">7 items per row</a>
+                            <a href="shop-grid-7.php" class="site-nav">7 items per row</a>
                         </li>
                         <li>
-                            <a href="shop-listview.html" class="site-nav last">Product Listview</a>
+                            <a href="shop-listview.php" class="site-nav last">Product Listview</a>
                         </li>
                     </ul>
                 </li>
@@ -710,34 +710,34 @@
                     <a href="#" class="site-nav">Shop Features<i class="anm anm-plus-l"></i></a>
                     <ul>
                         <li>
-                            <a href="shop-left-sidebar.html" class="site-nav">Product Countdown
+                            <a href="shop-left-sidebar.php" class="site-nav">Product Countdown
                             </a>
                         </li>
                         <li>
-                            <a href="shop-right-sidebar.html" class="site-nav">Infinite Scrolling</a>
+                            <a href="shop-right-sidebar.php" class="site-nav">Infinite Scrolling</a>
                         </li>
 
                         <li>
-                            <a href="shop-grid-3.html" class="site-nav">Pagination - Classic</a>
+                            <a href="shop-grid-3.php" class="site-nav">Pagination - Classic</a>
                         </li>
                         <li>
-                            <a href="shop-grid-6.html" class="site-nav">Pagination - Load More</a>
+                            <a href="shop-grid-6.php" class="site-nav">Pagination - Load More</a>
                         </li>
                         <li>
-                            <a href="product-labels.html" class="site-nav">Dynamic Product Labels</a>
+                            <a href="product-labels.php" class="site-nav">Dynamic Product Labels</a>
                         </li>
                         <li>
-                            <a href="product-swatches-style.html" class="site-nav">Product Swatches
+                            <a href="product-swatches-style.php" class="site-nav">Product Swatches
                             </a>
                         </li>
                         <li>
-                            <a href="product-hover-info.html" class="site-nav">Product Hover Info</a>
+                            <a href="product-hover-info.php" class="site-nav">Product Hover Info</a>
                         </li>
                         <li>
-                            <a href="shop-grid-3.html" class="site-nav">Product Reviews</a>
+                            <a href="shop-grid-3.php" class="site-nav">Product Reviews</a>
                         </li>
                         <li>
-                            <a href="shop-left-sidebar.html" class="site-nav last">Discount Label
+                            <a href="shop-left-sidebar.php" class="site-nav last">Discount Label
                             </a>
                         </li>
                     </ul>
@@ -745,52 +745,52 @@
             </ul>
         </li>
         <li class="lvl1 parent megamenu">
-            <a href="product-layout-1.html">Product <i class="anm anm-plus-l"></i></a>
+            <a href="product-layout-1.php">Product <i class="anm anm-plus-l"></i></a>
             <ul>
                 <li>
-                    <a href="product-layout-1.html" class="site-nav">Product Page<i class="anm anm-plus-l"></i></a>
+                    <a href="product-layout-1.php" class="site-nav">Product Page<i class="anm anm-plus-l"></i></a>
                     <ul>
                         <li>
-                            <a href="product-layout-1.html" class="site-nav">Product Layout 1</a>
+                            <a href="product-layout-1.php" class="site-nav">Product Layout 1</a>
                         </li>
                         <li>
-                            <a href="product-layout-2.html" class="site-nav">Product Layout 2</a>
+                            <a href="product-layout-2.php" class="site-nav">Product Layout 2</a>
                         </li>
                         <li>
-                            <a href="product-layout-3.html" class="site-nav">Product Layout 3</a>
+                            <a href="product-layout-3.php" class="site-nav">Product Layout 3</a>
                         </li>
                         <li>
-                            <a href="product-with-left-thumbs.html" class="site-nav">Product With Left Thumbs</a>
+                            <a href="product-with-left-thumbs.php" class="site-nav">Product With Left Thumbs</a>
                         </li>
                         <li>
-                            <a href="product-with-right-thumbs.html" class="site-nav">Product With Right Thumbs</a>
+                            <a href="product-with-right-thumbs.php" class="site-nav">Product With Right Thumbs</a>
                         </li>
                         <li>
-                            <a href="product-with-bottom-thumbs.html" class="site-nav last">Product With Bottom Thumbs</a>
+                            <a href="product-with-bottom-thumbs.php" class="site-nav last">Product With Bottom Thumbs</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="short-description.html" class="site-nav">Product Features<i class="anm anm-plus-l"></i></a>
+                    <a href="short-description.php" class="site-nav">Product Features<i class="anm anm-plus-l"></i></a>
                     <ul>
                         <li>
-                            <a href="short-description.html" class="site-nav">Short Description</a>
+                            <a href="short-description.php" class="site-nav">Short Description</a>
                         </li>
                         <li>
-                            <a href="product-countdown.html" class="site-nav">Product Countdown</a>
+                            <a href="product-countdown.php" class="site-nav">Product Countdown</a>
                         </li>
                         <li>
-                            <a href="product-video.html" class="site-nav">Product Video</a>
+                            <a href="product-video.php" class="site-nav">Product Video</a>
                         </li>
                         <li>
-                            <a href="product-quantity-message.html" class="site-nav">Product Quantity Message</a>
+                            <a href="product-quantity-message.php" class="site-nav">Product Quantity Message</a>
                         </li>
                         <li>
-                            <a href="product-visitor-sold-count.html" class="site-nav">Product Visitor/Sold Count
+                            <a href="product-visitor-sold-count.php" class="site-nav">Product Visitor/Sold Count
                             </a>
                         </li>
                         <li>
-                            <a href="product-zoom-lightbox.html" class="site-nav last">Product Zoom/Lightbox
+                            <a href="product-zoom-lightbox.php" class="site-nav last">Product Zoom/Lightbox
                             </a>
                         </li>
                     </ul>
@@ -799,22 +799,22 @@
                     <a href="#" class="site-nav">Product Features<i class="anm anm-plus-l"></i></a>
                     <ul>
                         <li>
-                            <a href="product-with-variant-image.html" class="site-nav">Product with Variant Image</a>
+                            <a href="product-with-variant-image.php" class="site-nav">Product with Variant Image</a>
                         </li>
                         <li>
-                            <a href="product-with-color-swatch.html" class="site-nav">Product with Color Swatch</a>
+                            <a href="product-with-color-swatch.php" class="site-nav">Product with Color Swatch</a>
                         </li>
                         <li>
-                            <a href="product-with-image-swatch.html" class="site-nav">Product with Image Swatch</a>
+                            <a href="product-with-image-swatch.php" class="site-nav">Product with Image Swatch</a>
                         </li>
                         <li>
-                            <a href="product-with-dropdown.html" class="site-nav">Product with Dropdown</a>
+                            <a href="product-with-dropdown.php" class="site-nav">Product with Dropdown</a>
                         </li>
                         <li>
-                            <a href="product-with-rounded-square.html" class="site-nav">Product with Rounded Square</a>
+                            <a href="product-with-rounded-square.php" class="site-nav">Product with Rounded Square</a>
                         </li>
                         <li>
-                            <a href="swatches-style.html" class="site-nav last">Product Swatches All Style</a>
+                            <a href="swatches-style.php" class="site-nav last">Product Swatches All Style</a>
                         </li>
                     </ul>
                 </li>
@@ -822,23 +822,23 @@
                     <a href="#" class="site-nav">Product Features<i class="anm anm-plus-l"></i></a>
                     <ul>
                         <li>
-                            <a href="product-accordion.html" class="site-nav">Product Accordion</a>
+                            <a href="product-accordion.php" class="site-nav">Product Accordion</a>
                         </li>
                         <li>
-                            <a href="product-pre-orders.html" class="site-nav">Product Pre-orders
+                            <a href="product-pre-orders.php" class="site-nav">Product Pre-orders
                             </a>
                         </li>
                         <li>
-                            <a href="product-labels-detail.html" class="site-nav">Product Labels</a>
+                            <a href="product-labels-detail.php" class="site-nav">Product Labels</a>
                         </li>
                         <li>
-                            <a href="product-discount.html" class="site-nav">Product Discount In %</a>
+                            <a href="product-discount.php" class="site-nav">Product Discount In %</a>
                         </li>
                         <li>
-                            <a href="product-shipping-message.html" class="site-nav">Product Shipping Message</a>
+                            <a href="product-shipping-message.php" class="site-nav">Product Shipping Message</a>
                         </li>
                         <li>
-                            <a href="product-shipping-message.html" class="site-nav last">Size Guide
+                            <a href="product-shipping-message.php" class="site-nav last">Size Guide
                             </a>
                         </li>
                     </ul>
@@ -846,67 +846,67 @@
             </ul>
         </li>
         <li class="lvl1 parent megamenu">
-            <a href="about-us.html">Pages <i class="anm anm-plus-l"></i></a>
+            <a href="about-us.php">Pages <i class="anm anm-plus-l"></i></a>
             <ul>
                 <li>
-                    <a href="cart-variant1.html" class="site-nav">Cart Page <i class="anm anm-plus-l"></i></a>
+                    <a href="cart-variant1.php" class="site-nav">Cart Page <i class="anm anm-plus-l"></i></a>
                     <ul class="dropdown">
                         <li>
-                            <a href="cart-variant1.html" class="site-nav">Cart Variant1</a>
+                            <a href="cart-variant1.php" class="site-nav">Cart Variant1</a>
                         </li>
                         <li>
-                            <a href="cart-variant2.html" class="site-nav">Cart Variant2</a>
+                            <a href="cart-variant2.php" class="site-nav">Cart Variant2</a>
                         </li>
                     </ul>
                 </li>
                 <li>
-                    <a href="compare-variant1.html" class="site-nav">Compare Product <i class="anm anm-plus-l"></i></a>
+                    <a href="compare-variant1.php" class="site-nav">Compare Product <i class="anm anm-plus-l"></i></a>
                     <ul class="dropdown">
                         <li>
-                            <a href="compare-variant1.html" class="site-nav">Compare Variant1</a>
+                            <a href="compare-variant1.php" class="site-nav">Compare Variant1</a>
                         </li>
                         <li>
-                            <a href="compare-variant2.html" class="site-nav">Compare Variant2</a>
+                            <a href="compare-variant2.php" class="site-nav">Compare Variant2</a>
                         </li>
                     </ul>
                 </li>
-                <li><a href="checkout.html" class="site-nav">Checkout</a></li>
+                <li><a href="checkout.php" class="site-nav">Checkout</a></li>
                 <li>
-                    <a href="about-us.html" class="site-nav">About Us<span class="lbl nm_label1">New</span></a>
+                    <a href="about-us.php" class="site-nav">About Us<span class="lbl nm_label1">New</span></a>
                 </li>
-                <li><a href="contact-us.html" class="site-nav">Contact Us</a></li>
-                <li><a href="faqs.html" class="site-nav">FAQs</a></li>
+                <li><a href="contact-us.php" class="site-nav">Contact Us</a></li>
+                <li><a href="faqs.php" class="site-nav">FAQs</a></li>
                 <li>
-                    <a href="lookbook1.html" class="site-nav">Lookbook<i class="anm anm-plus-l"></i></a>
+                    <a href="lookbook1.php" class="site-nav">Lookbook<i class="anm anm-plus-l"></i></a>
                     <ul>
-                        <li><a href="lookbook1.html" class="site-nav">Style 1</a></li>
+                        <li><a href="lookbook1.php" class="site-nav">Style 1</a></li>
                         <li>
-                            <a href="lookbook2.html" class="site-nav last">Style 2</a>
+                            <a href="lookbook2.php" class="site-nav last">Style 2</a>
                         </li>
                     </ul>
                 </li>
-                <li><a href="404.html" class="site-nav">404</a></li>
+                <li><a href="404.php" class="site-nav">404</a></li>
                 <li>
-                    <a href="coming-soon.html" class="site-nav">Coming soon<span class="lbl nm_label1">New</span></a>
+                    <a href="coming-soon.php" class="site-nav">Coming soon<span class="lbl nm_label1">New</span></a>
                 </li>
             </ul>
         </li>
         <li class="lvl1 parent megamenu">
-            <a href="blog-left-sidebar.html">Blog <i class="anm anm-plus-l"></i></a>
+            <a href="blog-left-sidebar.php">Blog <i class="anm anm-plus-l"></i></a>
             <ul>
                 <li>
-                    <a href="blog-left-sidebar.html" class="site-nav">Left Sidebar</a>
+                    <a href="blog-left-sidebar.php" class="site-nav">Left Sidebar</a>
                 </li>
                 <li>
-                    <a href="blog-right-sidebar.html" class="site-nav">Right Sidebar</a>
+                    <a href="blog-right-sidebar.php" class="site-nav">Right Sidebar</a>
                 </li>
                 <li>
-                    <a href="blog-fullwidth.html" class="site-nav">Fullwidth</a>
+                    <a href="blog-fullwidth.php" class="site-nav">Fullwidth</a>
                 </li>
                 <li>
-                    <a href="blog-grid-view.html" class="site-nav">Gridview</a>
+                    <a href="blog-grid-view.php" class="site-nav">Gridview</a>
                 </li>
-                <li><a href="blog-article.html" class="site-nav">Article</a></li>
+                <li><a href="blog-article.php" class="site-nav">Article</a></li>
             </ul>
         </li>
         <li class="lvl1">

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-<!-- belle/register.html   11 Nov 2019 12:22:27 GMT -->
+<!-- belle/register.php   11 Nov 2019 12:22:27 GMT -->
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -45,25 +45,25 @@
                   <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="form-group">
                       <label for="FirstName">First Name</label>
-                      <input type="text" name="customer[first_name]" placeholder="" id="FirstName" autofocus="" />
+                      <input type="text" name="fname" placeholder="" id="FirstName" autofocus="" />
                     </div>
                   </div>
                   <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="form-group">
                       <label for="LastName">Last Name</label>
-                      <input type="text" name="customer[last_name]" placeholder="" id="LastName" />
+                      <input type="text" name="lname" placeholder="" id="LastName" />
                     </div>
                   </div>
                   <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="form-group">
                       <label for="CustomerEmail">Email</label>
-                      <input type="email" name="customer[email]" placeholder="" id="CustomerEmail" class="" autocorrect="off" autocapitalize="off" autofocus="" />
+                      <input type="email" name="email" placeholder="" id="CustomerEmail" class="" autocorrect="off" autocapitalize="off" autofocus="" />
                     </div>
                   </div>
                   <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                     <div class="form-group">
                       <label for="CustomerPassword">Password</label>
-                      <input type="password" value="" name="customer[password]" placeholder="" id="CustomerPassword" class="" />
+                      <input type="password" value="" name="password" placeholder="" id="CustomerPassword" class="" />
                     </div>
                   </div>
 
@@ -71,14 +71,14 @@
                     <div class="form-group">
                       <label for="CustomerPassword">Address</label>
                       <div class="form-floating">
-                        <textarea class="form-control" id="floatingTextarea"></textarea>
+                        <textarea class="form-control" name="address" id="floatingTextarea"></textarea>
                       </div>
                     </div>
                   </div>
                 </div>
                 <div class="row">
                   <div class="text-center col-12 col-sm-12 col-md-12 col-lg-12">
-                    <button type="submit" id='newuserbtn' class="btn">Create</button>
+                    <input type="submit" id='newuserbtn' class="btn" name="create" value="Create" />
                   </div>
                 </div>
               </form>
@@ -117,10 +117,9 @@
         var password = $('#CustomerPassword').val();
         var address = $('#floatingTextarea').val();
 
-        
         $.ajax({
           url: './php/adduser.php',
-          type: 'POST',
+          method: 'POST',
           data: {
             fname: fname,
             lname: lname,
@@ -132,15 +131,17 @@
             if (data == 1) {
               $('#CustomerLoginForm').trigger('reset');
             } else {
-              alert("can't save records");
+              alert('Data not insert')
             }
           }
         })
+
+
       })
     });
   </script>
 </body>
 
-<!-- belle/register.html   11 Nov 2019 12:22:27 GMT -->
+<!-- belle/register.php   11 Nov 2019 12:22:27 GMT -->
 
 </html>

@@ -1,33 +1,12 @@
-<?php
-include 'config/config.php';
-session_start();
-if (isset($_POST['userlogsub'])) {
-  $sql = $con->prepare("SELECT email,fname FROM user WHERE email=? AND password=? AND status='active'");
-  $sql->bindParam(1, $_POST['email']);
-  $sql->bindParam(2, md5($_POST['password']));
-  $sql->execute();
-
-  $result = $sql->rowCount();
-  if ($result > 0) {
-    $msg = "Login Successful";
-    $_SESSION['email'] = $row_res['email'];
-    $_SESSION['fname'] = $row_res['fname'];
-    header('Location:index.php');
-  } else {
-    $msg = "Login failed";
-  }
-}
-$con = '';
-?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
-<!-- belle/login.php   11 Nov 2019 12:22:27 GMT -->
+<!-- belle/contact-us.php   11 Nov 2019 12:44:39 GMT -->
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Account &ndash; Belle Multipurpose Bootstrap 4 Template</title>
+  <title>Contact Us &ndash; Belle Multipurpose Bootstrap 4 Template</title>
   <meta name="description" content="description">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Favicon -->
@@ -41,7 +20,7 @@ $con = '';
   <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
-<body class="page-template belle">
+<body class="contact-template page-template belle">
   <div class="pageWrapper">
     <!--Search Form Drawer-->
     <div class="search">
@@ -116,7 +95,7 @@ $con = '';
               </button>
             </div>
             <!--Desktop Menu-->
-            <nav class="grid__item" id="AccessibleNav" role="navigation">
+            <nav class="grid__item" id="AccessibleNav">
               <!-- for mobile -->
               <ul id="siteNav" class="site-nav medium center hidearrow">
                 <li class="lvl1 parent megamenu"><a href="#">Home <i class="anm anm-angle-down-l"></i></a>
@@ -310,7 +289,7 @@ $con = '';
           </div>
           <div class="col-4 col-sm-3 col-md-3 col-lg-2">
             <div class="site-cart">
-              <a href="#;" class="site-header__cart" title="Cart">
+              <a href="#" class="site-header__cart" title="Cart">
                 <i class="icon anm anm-bag-l"></i>
                 <span id="CartCount" class="site-header__cart-count" data-cart-render="item_count">2</span>
               </a>
@@ -562,42 +541,108 @@ $con = '';
       <div class="page section-header text-center">
         <div class="page-title">
           <div class="wrapper">
-            <h1 class="page-width">Login</h1>
+            <h1 class="page-width">Contact Us</h1>
           </div>
         </div>
       </div>
       <!--End Page Title-->
+      <div class="map-section map">
+        <iframe src="https://www.google.com/maps/embed?pb=" height="350" allowfullscreen></iframe>
+        <div class="container">
+          <div class="row">
+            <div class="map-section__overlay-wrapper">
+              <div class="map-section__overlay">
+                <h3 class="h4">Our store</h3>
+                <div class="rte-setting">
+                  <p>123 Fake St.<br>Toronto, Canada</p>
+                  <p>Mon - Fri, 10am - 9pm<br>Saturday, 11am - 9pm<br>Sunday, 11am - 5pm</p>
+                </div>
+                <p><a href="https://maps.google.com/?daddr=80%20Spadina%20Ave,%20Toronto" class="btn btn--secondary btn--small" target="_blank">Get directions</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bredcrumbWrap">
+        <div class="container breadcrumbs">
+          <a href="index.php" title="Back to the home page">Home</a><span aria-hidden="true">›</span><span>Contact Us</span>
+        </div>
+      </div>
 
       <div class="container">
         <div class="row">
-          <div class="col-12 col-sm-12 col-md-6 col-lg-6 main-col offset-md-3">
-            <div class="mb-4">
-              <form method="post" action="#" id="CustomerLoginForm" accept-charset="UTF-8" class="contact-form">
+          <div class="col-12 col-sm-12 col-md-8 col-lg-8 mb-4">
+            <h2>Drop Us A Line</h2>
+            <p>Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500 </p>
+            <div class="formFeilds contact-form form-vertical">
+              <form action="http://annimexweb.com/items/belle/assets/php/mail.php" method="post" id="contact_form" class="contact-form">
                 <div class="row">
-                  <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                     <div class="form-group">
-                      <label for="CustomerEmail">Email</label>
-                      <input type="email" name="email" placeholder="" id="CustomerEmail" class="" autocorrect="off" autocapitalize="off" autofocus="">
+                      <input type="text" id="ContactFormName" name="name" placeholder="Name" value="" required="">
                     </div>
                   </div>
-                  <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-6">
                     <div class="form-group">
-                      <label for="CustomerPassword">Password</label>
-                      <input type="password" value="" name="password" placeholder="" id="CustomerPassword" class="">
+                      <input type="email" id="ContactFormEmail" name="email" placeholder="Email" value="" required="">
                     </div>
                   </div>
                 </div>
                 <div class="row">
-                  <div class="text-center col-12 col-sm-12 col-md-12 col-lg-12">
-                    <input type="submit" name="userlogsub" class="btn mb-3" value="Sign In">
-                    <p class="mb-4">
-                      <a href="#" id="RecoverPassword">Forgot your password?</a> &nbsp; | &nbsp;
-                      <a href="register.php" id="customer_register_link">Create account</a>
-                    </p>
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="form-group">
+                      <input required="" type="tel" id="ContactFormPhone" name="phone" pattern="[0-9\-]*" placeholder="Phone Number" value="">
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="form-group">
+                      <input required="" type="text" id="ContactSubject" name="subject" placeholder="Subject" value="">
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="form-group">
+                      <textarea required="" rows="10" id="ContactFormMessage" name="message" placeholder="Your Message"></textarea>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <input type="submit" class="btn" value="Send Message">
                   </div>
                 </div>
               </form>
             </div>
+          </div>
+          <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="open-hours">
+              <strong>Opening Hours</strong><br>
+              Mon - Sat : 9am - 11pm<br>
+              Sunday: 11am - 5pm
+            </div>
+            <hr />
+            <ul class="addressFooter">
+              <li><i class="icon anm anm-map-marker-al"></i>
+                <p>55 Gallaxy Enque, 2568 steet, 23568 NY</p>
+              </li>
+              <li class="phone"><i class="icon anm anm-phone-s"></i>
+                <p>(440) 000 000 0000</p>
+              </li>
+              <li class="email"><i class="icon anm anm-envelope-l"></i>
+                <p>sales@yousite.com</p>
+              </li>
+            </ul>
+            <hr />
+            <ul class="list--inline site-footer__social-icons social-icons">
+              <li><a class="social-icons__link" href="#" target="_blank" title="Belle Multipurpose Bootstrap 4 Template on Facebook"><i class="icon icon-facebook"></i></a></li>
+              <li><a class="social-icons__link" href="#" target="_blank" title="Belle Multipurpose Bootstrap 4 Template on Twitter"><i class="icon icon-twitter"></i> <span class="icon__fallback-text">Twitter</span></a></li>
+              <li><a class="social-icons__link" href="#" target="_blank" title="Belle Multipurpose Bootstrap 4 Template on Pinterest"><i class="icon icon-pinterest"></i> <span class="icon__fallback-text">Pinterest</span></a></li>
+              <li><a class="social-icons__link" href="#" target="_blank" title="Belle Multipurpose Bootstrap 4 Template on Instagram"><i class="icon icon-instagram"></i> <span class="icon__fallback-text">Instagram</span></a></li>
+              <li><a class="social-icons__link" href="#" target="_blank" title="Belle Multipurpose Bootstrap 4 Template on Tumblr"><i class="icon icon-tumblr-alt"></i> <span class="icon__fallback-text">Tumblr</span></a></li>
+              <li><a class="social-icons__link" href="#" target="_blank" title="Belle Multipurpose Bootstrap 4 Template on YouTube"><i class="icon icon-youtube"></i> <span class="icon__fallback-text">YouTube</span></a></li>
+              <li><a class="social-icons__link" href="#" target="_blank" title="Belle Multipurpose Bootstrap 4 Template on Vimeo"><i class="icon icon-vimeo-alt"></i> <span class="icon__fallback-text">Vimeo</span></a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -737,6 +782,6 @@ $con = '';
   </div>
 </body>
 
-<!-- belle/login.php   11 Nov 2019 12:22:27 GMT -->
+<!-- belle/contact-us.php   11 Nov 2019 12:44:39 GMT -->
 
 </html>

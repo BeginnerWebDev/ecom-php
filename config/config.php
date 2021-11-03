@@ -1,5 +1,6 @@
 <?php
+$db_name = "mysql:host=localhost;dbname=ecomerce";
+$username = "root";
+$pwd = "";
 
-$con = mysqli_connect('localhost','root','','ecomerce') or die('Connection Failed');
-
-?>
+$con = new PDO($db_name, $username, $pwd);

@@ -1,10 +1,7 @@
-<?php
-session_start();
-?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
-<!-- belle/index.php   11 Nov 2019 12:16:10 GMT -->
+<!-- belle/home5-cosmetic.php   11 Nov 2019 12:25:38 GMT -->
 
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -23,7 +20,7 @@ session_start();
     <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
-<body class="template-index belle template-index-belle">
+<body class="template-index belle home5-cosmetic">
     <div id="pre-loader">
         <img src="assets/images/loader.gif" alt="Loading..." />
     </div>
@@ -73,8 +70,6 @@ session_start();
                     <div class="col-2 col-sm-4 col-md-3 col-lg-4 text-right">
                         <span class="user-menu d-block d-lg-none"><i class="anm anm-user-al" aria-hidden="true"></i></span>
                         <ul class="customer-links list-inline">
-
-                            <li><a href="">Welcome <?php echo (isset($_SESSION['fname'])) ? $_SESSION['fname'] : ""; ?></a></li>
                             <li><a href="login.php">Login</a></li>
                             <li><a href="register.php">Create Account</a></li>
                             <li><a href="wishlist.php">Wishlist</a></li>
@@ -105,7 +100,7 @@ session_start();
                         <!--Desktop Menu-->
                         <nav class="grid__item" id="AccessibleNav">
                             <!-- for mobile -->
-                            <ul id="siteNav" class="site-nav medium center hidearrow">
+                            <ul id="siteNav" class="site-nav medium right hidearrow">
                                 <li class="lvl1 parent megamenu"><a href="#">Home <i class="anm anm-angle-down-l"></i></a>
                                     <div class="megamenu style1">
                                         <ul class="grid mmWrapper">
@@ -299,7 +294,7 @@ session_start();
                     <!--Mobile Logo-->
                     <div class="col-4 col-sm-3 col-md-3 col-lg-2">
                         <div class="site-cart">
-                            <a href="#;" class="site-header__cart" title="Cart">
+                            <a href="#" class="site-header__cart" title="Cart">
                                 <i class="icon anm anm-bag-l"></i>
                                 <span id="CartCount" class="site-header__cart-count" data-cart-render="item_count">2</span>
                             </a>
@@ -365,7 +360,7 @@ session_start();
                                     </div>
                                 </div>
                             </div>
-                            <!--EndMinicart Popup-->
+                            <!--End Minicart Popup-->
                         </div>
                         <div class="site-header__search">
                             <button type="button" class="search-trigger"><i class="icon anm anm-search-l"></i></button>
@@ -548,31 +543,35 @@ session_start();
         <!--Body Content-->
         <div id="page-content">
             <!--Home slider-->
-            <div class="slideshow slideshow-wrapper pb-section sliderFull">
+            <div class="slideshow slideshow-wrapper pb-section">
                 <div class="home-slideshow">
-                    <div class="slide">
-                        <div class="blur-up lazyload bg-size">
-                            <img class="blur-up lazyload bg-img" data-src="assets/images/slideshow-banners/belle-banner1.jpg" src="assets/images/slideshow-banners/belle-banner1.jpg" alt="Shop Our New Collection" title="Shop Our New Collection" />
-                            <div class="slideshow__text-wrap slideshow__overlay classic bottom">
-                                <div class="slideshow__text-content bottom">
-                                    <div class="wrap-caption center">
-                                        <h2 class="h1 mega-title slideshow__title">Shop Our New Collection</h2>
-                                        <span class="mega-subtitle slideshow__subtitle">From Hight to low, classic or modern. We have you covered</span>
-                                        <span class="btn">Shop now</span>
+                    <div class="slide slideshow--medium">
+                        <div class="blur-up lazyload">
+                            <img class="blur-up lazyload" data-src="assets/images/slideshow-banners/home5-banner1.jpg" src="assets/images/slideshow-banners/home5-banner1.jpg" alt="The One" title="The One" />
+                            <div class="slideshow__text-wrap slideshow__overlay classic middle">
+                                <div class="slideshow__text-content classic left">
+                                    <div class="container">
+                                        <div class="wrap-caption left">
+                                            <h2 class="h1 mega-title slideshow__title">The One</h2>
+                                            <span class="mega-subtitle slideshow__subtitle">Complete your daring new look<br>with the one</span>
+                                            <span class="btn">Shop now</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="slide">
-                        <div class="blur-up lazyload bg-size">
-                            <img class="blur-up lazyload bg-img" data-src="assets/images/slideshow-banners/belle-banner2.jpg" src="assets/images/slideshow-banners/belle-banner2.jpg" alt="Summer Bikini Collection" title="Summer Bikini Collection" />
-                            <div class="slideshow__text-wrap slideshow__overlay classic bottom">
-                                <div class="slideshow__text-content bottom">
-                                    <div class="wrap-caption center">
-                                        <h2 class="h1 mega-title slideshow__title">Summer Bikini Collection</h2>
-                                        <span class="mega-subtitle slideshow__subtitle">Save up to 50% off this weekend only</span>
-                                        <span class="btn">Shop now</span>
+                    <div class="slide slideshow--medium">
+                        <div class="blur-up lazyload">
+                            <img class="blur-up lazyload" data-src="assets/images/slideshow-banners/home5-banner2.jpg" src="assets/images/slideshow-banners/home5-banner2.jpg" alt="Editors Picks" title="Editors Picks" />
+                            <div class="slideshow__text-wrap slideshow__overlay classic top">
+                                <div class="slideshow__text-content classic top">
+                                    <div class="container">
+                                        <div class="wrap-caption center">
+                                            <h2 class="h1 mega-title slideshow__title">Editors Picks</h2>
+                                            <span class="mega-subtitle slideshow__subtitle">The Editors Essential Mascara Guide</span>
+                                            <span class="btn">Shop now</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -581,20 +580,21 @@ session_start();
                 </div>
             </div>
             <!--End Home slider-->
+
             <!--Collection Tab slider-->
             <div class="tab-slider-product section">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                             <div class="section-header text-center">
-                                <h2 class="h2">New Arrivals</h2>
-                                <p>Browse the huge variety of our products</p>
+                                <h2 class="h2">We've got the best ones for you</h2>
+                                <p>Free delivery on the oder above $200</p>
                             </div>
                             <div class="tabs-listing">
                                 <ul class="tabs clearfix">
-                                    <li class="active" rel="tab1">Women</li>
-                                    <li rel="tab2">Men</li>
-                                    <li rel="tab3">Sale</li>
+                                    <li class="active" rel="tab1">We Recommend</li>
+                                    <li rel="tab2">What's new</li>
+                                    <li rel="tab3">Best Offers</li>
                                 </ul>
                                 <div class="tab_container">
                                     <div id="tab1" class="tab_content grid-products">
@@ -603,12 +603,12 @@ session_start();
                                                 <!-- start product image -->
                                                 <div class="product-image">
                                                     <!-- start product image -->
-                                                    <a href="short-description.php">
+                                                    <a href="#">
                                                         <!-- image -->
-                                                        <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image1.jpg" src="assets/images/product-images/product-image1.jpg" alt="image" title="product">
+                                                        <img class="primary blur-up lazyload" data-src="assets/images/cosmetic-product/product-image1.jpg" src="assets/images/cosmetic-product/product-image1.jpg" alt="image" title="product">
                                                         <!-- End image -->
                                                         <!-- Hover image -->
-                                                        <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image1-1.jpg" src="assets/images/product-images/product-image1-1.jpg" alt="image" title="product">
+                                                        <img class="hover blur-up lazyload" data-src="assets/images/cosmetic-product/product-image1-1.jpg" src="assets/images/cosmetic-product/product-image1-1.jpg" alt="image" title="product">
                                                         <!-- End hover image -->
                                                         <!-- product label -->
                                                         <div class="product-labels rectangular"><span class="lbl on-sale">-16%</span> <span class="lbl pr-label1">new</span></div>
@@ -646,7 +646,7 @@ session_start();
                                                 <div class="product-details text-center">
                                                     <!-- product name -->
                                                     <div class="product-name">
-                                                        <a href="short-description.php">Edna Dress</a>
+                                                        <a href="#">Edna Dress</a>
                                                     </div>
                                                     <!-- End product name -->
                                                     <!-- product price -->
@@ -655,24 +655,6 @@ session_start();
                                                         <span class="price">$600.00</span>
                                                     </div>
                                                     <!-- End product price -->
-
-                                                    <div class="product-review">
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star-o"></i>
-                                                        <i class="font-13 fa fa-star-o"></i>
-                                                    </div>
-                                                    <!-- Variant -->
-                                                    <ul class="swatches">
-                                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant1.jpg" alt="image" /></li>
-                                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant2.jpg" alt="image" /></li>
-                                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant3.jpg" alt="image" /></li>
-                                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant4.jpg" alt="image" /></li>
-                                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant5.jpg" alt="image" /></li>
-                                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant6.jpg" alt="image" /></li>
-                                                    </ul>
-                                                    <!-- End Variant -->
                                                 </div>
                                                 <!-- End product details -->
                                             </div>
@@ -680,12 +662,12 @@ session_start();
                                                 <!-- start product image -->
                                                 <div class="product-image">
                                                     <!-- start product image -->
-                                                    <a href="short-description.php">
+                                                    <a href="#">
                                                         <!-- image -->
-                                                        <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image2.jpg" src="assets/images/product-images/product-image2.jpg" alt="image" title="product">
+                                                        <img class="primary blur-up lazyload" data-src="assets/images/cosmetic-product/product-image2.jpg" src="assets/images/cosmetic-product/product-image2.jpg" alt="image" title="product">
                                                         <!-- End image -->
                                                         <!-- Hover image -->
-                                                        <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image2-1.jpg" src="assets/images/product-images/product-image2-1.jpg" alt="image" title="product">
+                                                        <img class="hover blur-up lazyload" data-src="assets/images/cosmetic-product/product-image2-1.jpg" src="assets/images/cosmetic-product/product-image2-1.jpg" alt="image" title="product">
                                                         <!-- End hover image -->
                                                     </a>
                                                     <!-- end product image -->
@@ -717,7 +699,7 @@ session_start();
                                                 <div class="product-details text-center">
                                                     <!-- product name -->
                                                     <div class="product-name">
-                                                        <a href="short-description.php">Elastic Waist Dress</a>
+                                                        <a href="#">Elastic Waist Dress</a>
                                                     </div>
                                                     <!-- End product name -->
                                                     <!-- product price -->
@@ -725,21 +707,6 @@ session_start();
                                                         <span class="price">$748.00</span>
                                                     </div>
                                                     <!-- End product price -->
-                                                    <div class="product-review">
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                    </div>
-                                                    <!-- Variant -->
-                                                    <ul class="swatches">
-                                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant2-1.jpg" alt="image" /></li>
-                                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant2-2.jpg" alt="image" /></li>
-                                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant2-3.jpg" alt="image" /></li>
-                                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant2-4.jpg" alt="image" /></li>
-                                                    </ul>
-                                                    <!-- End Variant -->
                                                 </div>
                                                 <!-- End product details -->
                                             </div>
@@ -747,12 +714,12 @@ session_start();
                                                 <!-- start product image -->
                                                 <div class="product-image">
                                                     <!-- start product image -->
-                                                    <a href="short-description.php">
+                                                    <a href="#">
                                                         <!-- image -->
-                                                        <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image3.jpg" src="assets/images/product-images/product-image3.jpg" alt="image" title="product">
+                                                        <img class="primary blur-up lazyload" data-src="assets/images/cosmetic-product/product-image3.jpg" src="assets/images/cosmetic-product/product-image3.jpg" alt="image" title="product">
                                                         <!-- End image -->
                                                         <!-- Hover image -->
-                                                        <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image3-1.jpg" src="assets/images/product-images/product-image3-1.jpg" alt="image" title="product">
+                                                        <img class="hover blur-up lazyload" data-src="assets/images/cosmetic-product/product-image3-1.jpg" src="assets/images/cosmetic-product/product-image3-1.jpg" alt="image" title="product">
                                                         <!-- End hover image -->
                                                         <!-- product label -->
                                                         <div class="product-labels rectangular"><span class="lbl pr-label2">Hot</span></div>
@@ -787,7 +754,7 @@ session_start();
                                                 <div class="product-details text-center">
                                                     <!-- product name -->
                                                     <div class="product-name">
-                                                        <a href="short-description.php">3/4 Sleeve Kimono Dress</a>
+                                                        <a href="#">3/4 Sleeve Kimono Dress</a>
                                                     </div>
                                                     <!-- End product name -->
                                                     <!-- product price -->
@@ -795,22 +762,6 @@ session_start();
                                                         <span class="price">$550.00</span>
                                                     </div>
                                                     <!-- End product price -->
-
-                                                    <div class="product-review">
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star-o"></i>
-                                                    </div>
-                                                    <!-- Variant -->
-                                                    <ul class="swatches">
-                                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant3-1.jpg" alt="image" /></li>
-                                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant3-2.jpg" alt="image" /></li>
-                                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant3-3.jpg" alt="image" /></li>
-                                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant3-4.jpg" alt="image" /></li>
-                                                    </ul>
-                                                    <!-- End Variant -->
                                                 </div>
                                                 <!-- End product details -->
                                             </div>
@@ -818,12 +769,12 @@ session_start();
                                                 <!-- start product image -->
                                                 <div class="product-image">
                                                     <!-- start product image -->
-                                                    <a href="short-description.php">
+                                                    <a href="#">
                                                         <!-- image -->
-                                                        <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image4.jpg" src="assets/images/product-images/product-image4.jpg" alt="image" title="product" />
+                                                        <img class="primary blur-up lazyload" data-src="assets/images/cosmetic-product/product-image4.jpg" src="assets/images/cosmetic-product/product-image4.jpg" alt="image" title="product" />
                                                         <!-- End image -->
                                                         <!-- Hover image -->
-                                                        <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image4-1.jpg" src="assets/images/product-images/product-image4-1.jpg" alt="image" title="product" />
+                                                        <img class="hover blur-up lazyload" data-src="assets/images/cosmetic-product/product-image4-1.jpg" src="assets/images/cosmetic-product/product-image4-1.jpg" alt="image" title="product" />
                                                         <!-- End hover image -->
                                                         <!-- product label -->
                                                         <div class="product-labels"><span class="lbl on-sale">Sale</span></div>
@@ -858,7 +809,7 @@ session_start();
                                                 <div class="product-details text-center">
                                                     <!-- product name -->
                                                     <div class="product-name">
-                                                        <a href="short-description.php">Cape Dress</a>
+                                                        <a href="#">Cape Dress</a>
                                                     </div>
                                                     <!-- End product name -->
                                                     <!-- product price -->
@@ -867,22 +818,6 @@ session_start();
                                                         <span class="price">$788.00</span>
                                                     </div>
                                                     <!-- End product price -->
-
-                                                    <div class="product-review">
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star-o"></i>
-                                                        <i class="font-13 fa fa-star-o"></i>
-                                                    </div>
-                                                    <!-- Variant -->
-                                                    <ul class="swatches">
-                                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant4-1.jpg" alt="image" /></li>
-                                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant4-2.jpg" alt="image" /></li>
-                                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant4-3.jpg" alt="image" /></li>
-                                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant4-4.jpg" alt="image" /></li>
-                                                    </ul>
-                                                    <!-- End Variant -->
                                                 </div>
                                                 <!-- End product details -->
                                             </div>
@@ -890,12 +825,12 @@ session_start();
                                                 <!-- start product image -->
                                                 <div class="product-image">
                                                     <!-- start product image -->
-                                                    <a href="short-description.php">
+                                                    <a href="#">
                                                         <!-- image -->
-                                                        <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image5.jpg" src="assets/images/product-images/product-image5.jpg" alt="image" title="product" />
+                                                        <img class="primary blur-up lazyload" data-src="assets/images/cosmetic-product/product-image5.jpg" src="assets/images/cosmetic-product/product-image5.jpg" alt="image" title="product" />
                                                         <!-- End image -->
                                                         <!-- Hover image -->
-                                                        <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image5-1.jpg" src="assets/images/product-images/product-image5-1.jpg" alt="image" title="product" />
+                                                        <img class="hover blur-up lazyload" data-src="assets/images/cosmetic-product/product-image5-1.jpg" src="assets/images/cosmetic-product/product-image5-1.jpg" alt="image" title="product" />
                                                         <!-- End hover image -->
                                                         <!-- product label -->
                                                         <div class="product-labels"><span class="lbl on-sale">Sale</span></div>
@@ -930,7 +865,7 @@ session_start();
                                                 <div class="product-details text-center">
                                                     <!-- product name -->
                                                     <div class="product-name">
-                                                        <a href="short-description.php">Paper Dress</a>
+                                                        <a href="#">Paper Dress</a>
                                                     </div>
                                                     <!-- End product name -->
                                                     <!-- product price -->
@@ -938,22 +873,6 @@ session_start();
                                                         <span class="price">$550.00</span>
                                                     </div>
                                                     <!-- End product price -->
-
-                                                    <div class="product-review">
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                    </div>
-                                                    <!-- Variant -->
-                                                    <ul class="swatches">
-                                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant3-1.jpg" alt="image" /></li>
-                                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant3-2.jpg" alt="image" /></li>
-                                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant3-3.jpg" alt="image" /></li>
-                                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant3-4.jpg" alt="image" /></li>
-                                                    </ul>
-                                                    <!-- End Variant -->
                                                 </div>
                                                 <!-- End product details -->
                                             </div>
@@ -965,12 +884,12 @@ session_start();
                                                 <!-- start product image -->
                                                 <div class="product-image">
                                                     <!-- start product image -->
-                                                    <a href="short-description.php">
+                                                    <a href="#">
                                                         <!-- image -->
-                                                        <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image6.jpg" src="assets/images/product-images/product-image6.jpg" alt="image" title="product">
+                                                        <img class="primary blur-up lazyload" data-src="assets/images/cosmetic-product/product-image6.jpg" src="assets/images/cosmetic-product/product-image6.jpg" alt="image" title="product">
                                                         <!-- End image -->
                                                         <!-- Hover image -->
-                                                        <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image6-1.jpg" src="assets/images/product-images/product-image6-1.jpg" alt="image" title="product">
+                                                        <img class="hover blur-up lazyload" data-src="assets/images/cosmetic-product/product-image6-1.jpg" src="assets/images/cosmetic-product/product-image6-1.jpg" alt="image" title="product">
                                                         <!-- End hover image -->
                                                         <!-- product label -->
                                                         <div class="product-labels rectangular"><span class="lbl on-sale">-16%</span> <span class="lbl pr-label1">new</span></div>
@@ -1005,7 +924,7 @@ session_start();
                                                 <div class="product-details text-center">
                                                     <!-- product name -->
                                                     <div class="product-name">
-                                                        <a href="short-description.php">Zipper Jacket</a>
+                                                        <a href="#">Zipper Jacket</a>
                                                     </div>
                                                     <!-- End product name -->
                                                     <!-- product price -->
@@ -1013,14 +932,6 @@ session_start();
                                                         <span class="price">$788.00</span>
                                                     </div>
                                                     <!-- End product price -->
-
-                                                    <div class="product-review">
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star-o"></i>
-                                                        <i class="font-13 fa fa-star-o"></i>
-                                                    </div>
                                                 </div>
                                                 <!-- End product details -->
                                             </div>
@@ -1028,12 +939,12 @@ session_start();
                                                 <!-- start product image -->
                                                 <div class="product-image">
                                                     <!-- start product image -->
-                                                    <a href="short-description.php">
+                                                    <a href="#">
                                                         <!-- image -->
-                                                        <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image7.jpg" src="assets/images/product-images/product-image7.jpg" alt="image" title="product">
+                                                        <img class="primary blur-up lazyload" data-src="assets/images/cosmetic-product/product-image7.jpg" src="assets/images/cosmetic-product/product-image7.jpg" alt="image" title="product">
                                                         <!-- End image -->
                                                         <!-- Hover image -->
-                                                        <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image7-1.jpg" src="assets/images/product-images/product-image7-1.jpg" alt="image" title="product">
+                                                        <img class="hover blur-up lazyload" data-src="assets/images/cosmetic-product/product-image7-1.jpg" src="assets/images/cosmetic-product/product-image7-1.jpg" alt="image" title="product">
                                                         <!-- End hover image -->
                                                     </a>
                                                     <!-- end product image -->
@@ -1065,7 +976,7 @@ session_start();
                                                 <div class="product-details text-center">
                                                     <!-- product name -->
                                                     <div class="product-name">
-                                                        <a href="short-description.php">Zipper Jacket</a>
+                                                        <a href="#">Zipper Jacket</a>
                                                     </div>
                                                     <!-- End product name -->
                                                     <!-- product price -->
@@ -1073,13 +984,6 @@ session_start();
                                                         <span class="price">$748.00</span>
                                                     </div>
                                                     <!-- End product price -->
-                                                    <div class="product-review">
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                    </div>
                                                 </div>
                                                 <!-- End product details -->
                                             </div>
@@ -1087,12 +991,12 @@ session_start();
                                                 <!-- start product image -->
                                                 <div class="product-image">
                                                     <!-- start product image -->
-                                                    <a href="short-description.php">
+                                                    <a href="#">
                                                         <!-- image -->
-                                                        <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image8.jpg" src="assets/images/product-images/product-image8.jpg" alt="image" title="product">
+                                                        <img class="primary blur-up lazyload" data-src="assets/images/cosmetic-product/product-image8.jpg" src="assets/images/cosmetic-product/product-image8.jpg" alt="image" title="product">
                                                         <!-- End image -->
                                                         <!-- Hover image -->
-                                                        <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image8-1.jpg" src="assets/images/product-images/product-image8-1.jpg" alt="image" title="product">
+                                                        <img class="hover blur-up lazyload" data-src="assets/images/cosmetic-product/product-image8-1.jpg" src="assets/images/cosmetic-product/product-image8-1.jpg" alt="image" title="product">
                                                         <!-- End hover image -->
                                                     </a>
                                                     <!-- end product image -->
@@ -1125,7 +1029,7 @@ session_start();
                                                 <div class="product-details text-center">
                                                     <!-- product name -->
                                                     <div class="product-name">
-                                                        <a href="short-description.php">Workers Shirt Jacket</a>
+                                                        <a href="#">Workers Shirt Jacket</a>
                                                     </div>
                                                     <!-- End product name -->
                                                     <!-- product price -->
@@ -1133,14 +1037,6 @@ session_start();
                                                         <span class="price">$238.00</span>
                                                     </div>
                                                     <!-- End product price -->
-
-                                                    <div class="product-review">
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star-o"></i>
-                                                    </div>
                                                 </div>
                                                 <!-- End product details -->
                                             </div>
@@ -1148,12 +1044,12 @@ session_start();
                                                 <!-- start product image -->
                                                 <div class="product-image">
                                                     <!-- start product image -->
-                                                    <a href="short-description.php">
+                                                    <a href="#">
                                                         <!-- image -->
-                                                        <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image9.jpg" src="assets/images/product-images/product-image9.jpg" alt="image" title="product">
+                                                        <img class="primary blur-up lazyload" data-src="assets/images/cosmetic-product/product-image9.jpg" src="assets/images/cosmetic-product/product-image9.jpg" alt="image" title="product">
                                                         <!-- End image -->
                                                         <!-- Hover image -->
-                                                        <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image9-1.jpg" src="assets/images/product-images/product-image9-1.jpg" alt="image" title="product">
+                                                        <img class="hover blur-up lazyload" data-src="assets/images/cosmetic-product/product-image9-1.jpg" src="assets/images/cosmetic-product/product-image9-1.jpg" alt="image" title="product">
                                                         <!-- End hover image -->
                                                     </a>
                                                     <!-- end product image -->
@@ -1185,7 +1081,7 @@ session_start();
                                                 <div class="product-details text-center">
                                                     <!-- product name -->
                                                     <div class="product-name">
-                                                        <a href="short-description.php">Watercolor Sport Jacket in Brown/Blue</a>
+                                                        <a href="#">Watercolor Sport Jacket in Brown/Blue</a>
                                                     </div>
                                                     <!-- End product name -->
                                                     <!-- product price -->
@@ -1193,14 +1089,6 @@ session_start();
                                                         <span class="price">$348.00</span>
                                                     </div>
                                                     <!-- End product price -->
-
-                                                    <div class="product-review">
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star-o"></i>
-                                                        <i class="font-13 fa fa-star-o"></i>
-                                                    </div>
                                                 </div>
                                                 <!-- End product details -->
                                             </div>
@@ -1208,12 +1096,12 @@ session_start();
                                                 <!-- start product image -->
                                                 <div class="product-image">
                                                     <!-- start product image -->
-                                                    <a href="short-description.php">
+                                                    <a href="#">
                                                         <!-- image -->
-                                                        <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image10.jpg" src="assets/images/product-images/product-image10.jpg" alt="image" title="product">
+                                                        <img class="primary blur-up lazyload" data-src="assets/images/cosmetic-product/product-image10.jpg" src="assets/images/cosmetic-product/product-image10.jpg" alt="image" title="product">
                                                         <!-- End image -->
                                                         <!-- Hover image -->
-                                                        <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image10-1.jpg" src="assets/images/product-images/product-image10-1.jpg" alt="image" title="product">
+                                                        <img class="hover blur-up lazyload" data-src="assets/images/cosmetic-product/product-image10-1.jpg" src="assets/images/cosmetic-product/product-image10-1.jpg" alt="image" title="product">
                                                         <!-- End hover image -->
                                                     </a>
                                                     <!-- end product image -->
@@ -1245,7 +1133,7 @@ session_start();
                                                 <div class="product-details text-center">
                                                     <!-- product name -->
                                                     <div class="product-name">
-                                                        <a href="short-description.php">Washed Wool Blazer</a>
+                                                        <a href="#">Washed Wool Blazer</a>
                                                     </div>
                                                     <!-- End product name -->
                                                     <!-- product price -->
@@ -1253,14 +1141,6 @@ session_start();
                                                         <span class="price">$1,078.00</span>
                                                     </div>
                                                     <!-- End product price -->
-
-                                                    <div class="product-review">
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                    </div>
                                                 </div>
                                                 <!-- End product details -->
                                             </div>
@@ -1272,12 +1152,12 @@ session_start();
                                                 <!-- start product image -->
                                                 <div class="product-image">
                                                     <!-- start product image -->
-                                                    <a href="short-description.php">
+                                                    <a href="#">
                                                         <!-- image -->
-                                                        <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image11.jpg" src="assets/images/product-images/product-image11.jpg" alt="image" title="product">
+                                                        <img class="primary blur-up lazyload" data-src="assets/images/cosmetic-product/product-image11.jpg" src="assets/images/cosmetic-product/product-image11.jpg" alt="image" title="product">
                                                         <!-- End image -->
                                                         <!-- Hover image -->
-                                                        <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image11-1.jpg" src="assets/images/product-images/product-image11-1.jpg" alt="image" title="product">
+                                                        <img class="hover blur-up lazyload" data-src="assets/images/cosmetic-product/product-image11-1.jpg" src="assets/images/cosmetic-product/product-image11-1.jpg" alt="image" title="product">
                                                         <!-- End hover image -->
                                                     </a>
                                                     <!-- end product image -->
@@ -1309,7 +1189,7 @@ session_start();
                                                 <div class="product-details text-center">
                                                     <!-- product name -->
                                                     <div class="product-name">
-                                                        <a href="short-description.php">Azur Bracelet in Blue Azurite</a>
+                                                        <a href="#">Azur Bracelet in Blue Azurite</a>
                                                     </div>
                                                     <!-- End product name -->
                                                     <!-- product price -->
@@ -1317,14 +1197,6 @@ session_start();
                                                         <span class="price">$168.00</span>
                                                     </div>
                                                     <!-- End product price -->
-
-                                                    <div class="product-review">
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star-o"></i>
-                                                        <i class="font-13 fa fa-star-o"></i>
-                                                    </div>
                                                 </div>
                                                 <!-- End product details -->
                                             </div>
@@ -1332,12 +1204,12 @@ session_start();
                                                 <!-- start product image -->
                                                 <div class="product-image">
                                                     <!-- start product image -->
-                                                    <a href="short-description.php">
+                                                    <a href="#">
                                                         <!-- image -->
-                                                        <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image12.jpg" src="assets/images/product-images/product-image12.jpg" alt="image" title="product">
+                                                        <img class="primary blur-up lazyload" data-src="assets/images/cosmetic-product/product-image12.jpg" src="assets/images/cosmetic-product/product-image12.jpg" alt="image" title="product">
                                                         <!-- End image -->
                                                         <!-- Hover image -->
-                                                        <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image12-1.jpg" src="assets/images/product-images/product-image12-1.jpg" alt="image" title="product">
+                                                        <img class="hover blur-up lazyload" data-src="assets/images/cosmetic-product/product-image12-1.jpg" src="assets/images/cosmetic-product/product-image12-1.jpg" alt="image" title="product">
                                                         <!-- End hover image -->
                                                     </a>
                                                     <!-- end product image -->
@@ -1369,7 +1241,7 @@ session_start();
                                                 <div class="product-details text-center">
                                                     <!-- product name -->
                                                     <div class="product-name">
-                                                        <a href="short-description.php">Bi-Goutte Earrings</a>
+                                                        <a href="#">Bi-Goutte Earrings</a>
                                                     </div>
                                                     <!-- End product name -->
                                                     <!-- product price -->
@@ -1377,13 +1249,6 @@ session_start();
                                                         <span class="price">$58.00</span>
                                                     </div>
                                                     <!-- End product price -->
-                                                    <div class="product-review">
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                    </div>
                                                 </div>
                                                 <!-- End product details -->
                                             </div>
@@ -1391,12 +1256,12 @@ session_start();
                                                 <!-- start product image -->
                                                 <div class="product-image">
                                                     <!-- start product image -->
-                                                    <a href="short-description.php">
+                                                    <a href="#">
                                                         <!-- image -->
-                                                        <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image13.jpg" src="assets/images/product-images/product-image13.jpg" alt="image" title="product">
+                                                        <img class="primary blur-up lazyload" data-src="assets/images/cosmetic-product/product-image13.jpg" src="assets/images/cosmetic-product/product-image13.jpg" alt="image" title="product">
                                                         <!-- End image -->
                                                         <!-- Hover image -->
-                                                        <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image13-1.jpg" src="assets/images/product-images/product-image13-1.jpg" alt="image" title="product">
+                                                        <img class="hover blur-up lazyload" data-src="assets/images/cosmetic-product/product-image13-1.jpg" src="assets/images/cosmetic-product/product-image13-1.jpg" alt="image" title="product">
                                                         <!-- End hover image -->
                                                     </a>
                                                     <!-- end product image -->
@@ -1429,7 +1294,7 @@ session_start();
                                                 <div class="product-details text-center">
                                                     <!-- product name -->
                                                     <div class="product-name">
-                                                        <a href="short-description.php">Ashton Necklace</a>
+                                                        <a href="#">Ashton Necklace</a>
                                                     </div>
                                                     <!-- End product name -->
                                                     <!-- product price -->
@@ -1437,14 +1302,6 @@ session_start();
                                                         <span class="price">$228.00</span>
                                                     </div>
                                                     <!-- End product price -->
-
-                                                    <div class="product-review">
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star-o"></i>
-                                                    </div>
                                                 </div>
                                                 <!-- End product details -->
                                             </div>
@@ -1452,12 +1309,12 @@ session_start();
                                                 <!-- start product image -->
                                                 <div class="product-image">
                                                     <!-- start product image -->
-                                                    <a href="short-description.php">
+                                                    <a href="#">
                                                         <!-- image -->
-                                                        <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image14.jpg" src="assets/images/product-images/product-image14.jpg" alt="image" title="product">
+                                                        <img class="primary blur-up lazyload" data-src="assets/images/cosmetic-product/product-image14.jpg" src="assets/images/cosmetic-product/product-image14.jpg" alt="image" title="product">
                                                         <!-- End image -->
                                                         <!-- Hover image -->
-                                                        <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image14-1.jpg" src="assets/images/product-images/product-image14-1.jpg" alt="image" title="product">
+                                                        <img class="hover blur-up lazyload" data-src="assets/images/cosmetic-product/product-image14-1.jpg" src="assets/images/cosmetic-product/product-image14-1.jpg" alt="image" title="product">
                                                         <!-- End hover image -->
                                                     </a>
                                                     <!-- end product image -->
@@ -1489,7 +1346,7 @@ session_start();
                                                 <div class="product-details text-center">
                                                     <!-- product name -->
                                                     <div class="product-name">
-                                                        <a href="short-description.php">Ara Ring</a>
+                                                        <a href="#">Ara Ring</a>
                                                     </div>
                                                     <!-- End product name -->
                                                     <!-- product price -->
@@ -1497,14 +1354,6 @@ session_start();
                                                         <span class="price">$198.00</span>
                                                     </div>
                                                     <!-- End product price -->
-
-                                                    <div class="product-review">
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star-o"></i>
-                                                        <i class="font-13 fa fa-star-o"></i>
-                                                    </div>
                                                 </div>
                                                 <!-- End product details -->
                                             </div>
@@ -1512,12 +1361,12 @@ session_start();
                                                 <!-- start product image -->
                                                 <div class="product-image">
                                                     <!-- start product image -->
-                                                    <a href="short-description.php">
+                                                    <a href="#">
                                                         <!-- image -->
-                                                        <img class="primary blur-up lazyload" data-src="assets/images/product-images/product-image15.jpg" src="assets/images/product-images/product-image15.jpg" alt="image" title="product">
+                                                        <img class="primary blur-up lazyload" data-src="assets/images/cosmetic-product/product-image15.jpg" src="assets/images/cosmetic-product/product-image15.jpg" alt="image" title="product">
                                                         <!-- End image -->
                                                         <!-- Hover image -->
-                                                        <img class="hover blur-up lazyload" data-src="assets/images/product-images/product-image15-1.jpg" src="assets/images/product-images/product-image15-1.jpg" alt="image" title="product">
+                                                        <img class="hover blur-up lazyload" data-src="assets/images/cosmetic-product/product-image15-1.jpg" src="assets/images/cosmetic-product/product-image15-1.jpg" alt="image" title="product">
                                                         <!-- End hover image -->
                                                     </a>
                                                     <!-- end product image -->
@@ -1549,7 +1398,7 @@ session_start();
                                                 <div class="product-details text-center">
                                                     <!-- product name -->
                                                     <div class="product-name">
-                                                        <a href="short-description.php">Ara Ring</a>
+                                                        <a href="#">Ara Ring</a>
                                                     </div>
                                                     <!-- End product name -->
                                                     <!-- product price -->
@@ -1557,14 +1406,6 @@ session_start();
                                                         <span class="price">$198.00</span>
                                                     </div>
                                                     <!-- End product price -->
-
-                                                    <div class="product-review">
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                        <i class="font-13 fa fa-star"></i>
-                                                    </div>
                                                 </div>
                                                 <!-- End product details -->
                                             </div>
@@ -1578,520 +1419,134 @@ session_start();
             </div>
             <!--Collection Tab slider-->
 
-            <!--Collection Box slider-->
-            <div class="collection-box section">
-                <div class="container-fluid">
-                    <div class="collection-grid">
-                        <div class="collection-grid-item">
-                            <a href="collection-page.php" class="collection-grid-item__link">
-                                <img data-src="assets/images/collection/fashion.jpg" src="assets/images/collection/fashion.jpg" alt="Fashion" class="blur-up lazyload" />
-                                <div class="collection-grid-item__title-wrapper">
-                                    <h3 class="collection-grid-item__title btn btn--secondary no-border">Fashion</h3>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="collection-grid-item">
-                            <a href="collection-page.php" class="collection-grid-item__link">
-                                <img class="blur-up lazyload" data-src="assets/images/collection/cosmetic.jpg" src="assets/images/collection/cosmetic.jpg" alt="Cosmetic" />
-                                <div class="collection-grid-item__title-wrapper">
-                                    <h3 class="collection-grid-item__title btn btn--secondary no-border">Cosmetic</h3>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="collection-grid-item blur-up lazyloaded">
-                            <a href="collection-page.php" class="collection-grid-item__link">
-                                <img data-src="assets/images/collection/bag.jpg" src="assets/images/collection/bag.jpg" alt="Bag" class="blur-up lazyload" />
-                                <div class="collection-grid-item__title-wrapper">
-                                    <h3 class="collection-grid-item__title btn btn--secondary no-border">Bag</h3>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="collection-grid-item">
-                            <a href="collection-page.php" class="collection-grid-item__link">
-                                <img data-src="assets/images/collection/accessories.jpg" src="assets/images/collection/accessories.jpg" alt="Accessories" class="blur-up lazyload" />
-                                <div class="collection-grid-item__title-wrapper">
-                                    <h3 class="collection-grid-item__title btn btn--secondary no-border">Accessories</h3>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="collection-grid-item">
-                            <a href="collection-page.php" class="collection-grid-item__link">
-                                <img data-src="assets/images/collection/shoes.jpg" src="assets/images/collection/shoes.jpg" alt="Shoes" class="blur-up lazyload" />
-                                <div class="collection-grid-item__title-wrapper">
-                                    <h3 class="collection-grid-item__title btn btn--secondary no-border">Shoes</h3>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="collection-grid-item">
-                            <a href="collection-page.php" class="collection-grid-item__link">
-                                <img data-src="assets/images/collection/jewellry.jpg" src="assets/images/collection/jewellry.jpg" alt="Jewellry" class="blur-up lazyload" />
-                                <div class="collection-grid-item__title-wrapper">
-                                    <h3 class="collection-grid-item__title btn btn--secondary no-border">Jewellry</h3>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--End Collection Box slider-->
-
-            <!--Logo Slider-->
-            <div class="section logo-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                            <div class="logo-bar">
-                                <div class="logo-bar__item">
-                                    <img src="assets/images/logo/brandlogo1.png" alt="" title="" />
-                                </div>
-                                <div class="logo-bar__item">
-                                    <img src="assets/images/logo/brandlogo2.png" alt="" title="" />
-                                </div>
-                                <div class="logo-bar__item">
-                                    <img src="assets/images/logo/brandlogo3.png" alt="" title="" />
-                                </div>
-                                <div class="logo-bar__item">
-                                    <img src="assets/images/logo/brandlogo4.png" alt="" title="" />
-                                </div>
-                                <div class="logo-bar__item">
-                                    <img src="assets/images/logo/brandlogo5.png" alt="" title="" />
-                                </div>
-                                <div class="logo-bar__item">
-                                    <img src="assets/images/logo/brandlogo6.png" alt="" title="" />
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--End Logo Slider-->
-
-            <!--Featured Product-->
-            <div class="product-rows section">
+            <!--Featured Column-->
+            <div class="section featured-column">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-sm-12 col-md-12 col-lg-12">
                             <div class="section-header text-center">
-                                <h2 class="h2">Featured collection</h2>
-                                <p>Our most popular products based on sales</p>
+                                <h2 class="h2">Best Beauty Picks For You!</h2>
                             </div>
                         </div>
                     </div>
-                    <div class="grid-products">
-                        <div class="row">
-                            <div class="col-6 col-sm-6 col-md-4 col-lg-4 item grid-view-item style2">
-                                <div class="grid-view_image">
-                                    <!-- start product image -->
-                                    <a href="product-accordion.php" class="grid-view-item__link">
-                                        <!-- image -->
-                                        <img class="grid-view-item__image primary blur-up lazyload" data-src="assets/images/product-images/product-image1.jpg" src="assets/images/product-images/product-image1.jpg" alt="image" title="product">
-                                        <!-- End image -->
-                                        <!-- Hover image -->
-                                        <img class="grid-view-item__image hover blur-up lazyload" data-src="assets/images/product-images/product-image1-1.jpg" src="assets/images/product-images/product-image1-1.jpg" alt="image" title="product">
-                                        <!-- End hover image -->
-                                        <!-- product label -->
-                                        <div class="product-labels rectangular"><span class="lbl on-sale">-16%</span> <span class="lbl pr-label1">new</span></div>
-                                        <!-- End product label -->
-                                    </a>
-                                    <!-- end product image -->
-                                    <!--start product details -->
-                                    <div class="product-details hoverDetails text-center mobile">
-                                        <!-- product name -->
-                                        <div class="product-name">
-                                            <a href="product-accordion.php">Edna Dress</a>
-                                        </div>
-                                        <!-- End product name -->
-                                        <!-- product price -->
-                                        <div class="product-price">
-                                            <span class="old-price">$500.00</span>
-                                            <span class="price">$600.00</span>
-                                        </div>
-                                        <!-- End product price -->
+                    <div class="row">
+                        <!--Featured Item-->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4 text-center">
+                            <p>
+                                <a href="#">
+                                    <img class="blur-up lazyload" data-src="assets/images/collection/cosmetic1.jpg" src="assets/images/collection/cosmetic1.jpg" alt="feature-row__image">
+                                </a>
+                            </p>
+                            <h3 class="h4"><a href="#">Color Cosmetics</a></h3>
+                            <div class="rte-setting">
+                                <p><strong>There is nothing more you can ask for. </strong>Gives your skin a natural glow with matte finish</p>
+                            </div>
+                            <a href="#" class="btn no-border">Shop Now</a>
+                        </div>
+                        <!--End Featured Item-->
+                        <!--Featured Item-->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4 text-center">
+                            <p>
+                                <a href="#">
+                                    <img class="blur-up lazyload" data-src="assets/images/collection/cosmetic2.jpg" src="assets/images/collection/cosmetic2.jpg" alt="feature-row__image">
+                                </a>
+                            </p>
+                            <h3 class="h4"><a href="#">Lip Color</a></h3>
+                            <div class="rte-setting">
+                                <p>Enjoy the stay. Love the Shine Logn Lasting Ultramatte perfact lip color</p>
+                            </div>
+                            <a href="#" class="btn no-border">Shop New Arrivals</a>
+                        </div>
+                        <!--End Featured Item-->
+                        <!--Featured Item-->
+                        <div class="col-12 col-sm-6 col-md-4 col-lg-4 text-center">
+                            <p>
+                                <a href="#">
+                                    <img class="blur-up lazyload" data-src="assets/images/collection/cosmetic3.jpg" src="assets/images/collection/cosmetic3.jpg" alt="feature-row__image">
+                                </a>
+                            </p>
+                            <h3 class="h4"><a href="#">Eyeliner</a></h3>
+                            <div class="rte-setting">
+                                <p>Wing it with perfection. Dramatic wing perfection. Fine tip liquid eyeliner stay long lasting</p>
+                            </div>
+                            <a href="#" class="btn no-border">Buy Now</a>
+                        </div>
+                        <!--End Featured Item-->
+                    </div>
+                </div>
+            </div>
+            <!--End Featured Column-->
 
-                                        <!-- product button -->
-                                        <div class="button-set">
-                                            <a href="javascript:void(0)" title="Quick View" class="quick-view-popup quick-view" data-toggle="modal" data-target="#content_quickview">
-                                                <i class="icon anm anm-search-plus-r"></i>
-                                            </a>
-                                            <!-- Start product button -->
-                                            <form class="variants add" action="#" onclick="window.location.href='cart.php'" method="post">
-                                                <button class="btn cartIcon btn-addto-cart" type="button" tabindex="0"><i class="icon anm anm-bag-l"></i></button>
-                                            </form>
-                                            <div class="wishlist-btn">
-                                                <a class="wishlist add-to-wishlist" href="wishlist.php">
-                                                    <i class="icon anm anm-heart-l"></i>
-                                                </a>
-                                            </div>
-                                            <div class="compare-btn">
-                                                <a class="compare add-to-compare" href="compare.php" title="Add to Compare">
-                                                    <i class="icon anm anm-random-r"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <!-- end product button -->
-                                    </div>
-                                    <!-- Variant -->
-                                    <ul class="swatches text-center">
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant1.jpg" alt="image" /></li>
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant2.jpg" alt="image" /></li>
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant3.jpg" alt="image" /></li>
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant4.jpg" alt="image" /></li>
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant5.jpg" alt="image" /></li>
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant6.jpg" alt="image" /></li>
-                                    </ul>
-                                    <!-- End Variant -->
-                                    <!-- End product details -->
-                                </div>
-                            </div>
-                            <div class="col-6 col-sm-6 col-md-4 col-lg-4 item grid-view-item style2">
-                                <div class="grid-view_image">
-                                    <!-- start product image -->
-                                    <a href="product-accordion.php" class="grid-view-item__link">
-                                        <!-- image -->
-                                        <img class="grid-view-item__image primary blur-up lazyload" data-src="assets/images/product-images/product-image2.jpg" src="assets/images/product-images/product-image2.jpg" alt="image" title="product">
-                                        <!-- End image -->
-                                        <!-- Hover image -->
-                                        <img class="grid-view-item__image hover blur-up lazyload" data-src="assets/images/product-images/product-image2-1.jpg" src="assets/images/product-images/product-image2-1.jpg" alt="image" title="product">
-                                        <!-- End hover image -->
-                                        <!-- product label -->
-                                        <div class="product-labels rectangular"><span class="lbl on-sale">-16%</span> <span class="lbl pr-label1">new</span></div>
-                                        <!-- End product label -->
-                                    </a>
-                                    <!-- end product image -->
-                                    <!--start product details -->
-                                    <div class="product-details hoverDetails text-center mobile">
-                                        <!-- product name -->
-                                        <div class="product-name">
-                                            <a href="product-accordion.php">Elastic Waist Dress</a>
-                                        </div>
-                                        <!-- End product name -->
-                                        <!-- product price -->
-                                        <div class="product-price">
-                                            <span class="price">$748.00</span>
-                                        </div>
-                                        <!-- product button -->
-                                        <div class="button-set">
-                                            <a href="javascript:void(0)" title="Quick View" class="quick-view-popup quick-view" data-toggle="modal" data-target="#content_quickview">
-                                                <i class="icon anm anm-search-plus-r"></i>
-                                            </a>
-                                            <!-- Start product button -->
-                                            <form class="variants add" action="#" onclick="window.location.href='cart.php'" method="post">
-                                                <button class="btn cartIcon btn-addto-cart" type="button" tabindex="0"><i class="icon anm anm-bag-l"></i></button>
-                                            </form>
-                                            <div class="wishlist-btn">
-                                                <a class="wishlist add-to-wishlist" href="wishlist.php">
-                                                    <i class="icon anm anm-heart-l"></i>
-                                                </a>
-                                            </div>
-                                            <div class="compare-btn">
-                                                <a class="compare add-to-compare" href="compare.php" title="Add to Compare">
-                                                    <i class="icon anm anm-random-r"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <!-- end product button -->
-                                    </div>
-                                    <!-- Variant -->
-                                    <ul class="swatches text-center">
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant2-1.jpg" alt="image" /></li>
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant2-2.jpg" alt="image" /></li>
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant2-3.jpg" alt="image" /></li>
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant2-4.jpg" alt="image" /></li>
-                                    </ul>
-                                    <!-- End Variant -->
-                                    <!-- End product details -->
-                                </div>
-                            </div>
-                            <div class="col-6 col-sm-6 col-md-4 col-lg-4 item grid-view-item style2">
-                                <div class="grid-view_image">
-                                    <!-- start product image -->
-                                    <a href="product-accordion.php" class="grid-view-item__link">
-                                        <!-- image -->
-                                        <img class="grid-view-item__image primary blur-up lazyload" data-src="assets/images/product-images/product-image3.jpg" src="assets/images/product-images/product-image3.jpg" alt="image" title="product">
-                                        <!-- End image -->
-                                        <!-- Hover image -->
-                                        <img class="grid-view-item__image hover blur-up lazyload" data-src="assets/images/product-images/product-image3-1.jpg" src="assets/images/product-images/product-image3-1.jpg" alt="image" title="product">
-                                        <!-- End hover image -->
-                                        <!-- product label -->
-                                        <div class="product-labels rectangular"><span class="lbl on-sale">-16%</span> <span class="lbl pr-label1">new</span></div>
-                                        <!-- End product label -->
-                                    </a>
-                                    <!-- end product image -->
-                                    <!--start product details -->
-                                    <div class="product-details hoverDetails text-center mobile">
-                                        <!-- product name -->
-                                        <div class="product-name">
-                                            <a href="product-accordion.php">3/4 Sleeve Kimono Dress</a>
-                                        </div>
-                                        <!-- End product name -->
-                                        <!-- product price -->
-                                        <div class="product-price">
-                                            <span class="price">$550.00</span>
-                                        </div>
-                                        <!-- product button -->
-                                        <div class="button-set">
-                                            <a href="javascript:void(0)" title="Quick View" class="quick-view-popup quick-view" data-toggle="modal" data-target="#content_quickview">
-                                                <i class="icon anm anm-search-plus-r"></i>
-                                            </a>
-                                            <!-- Start product button -->
-                                            <form class="variants add" action="#" onclick="window.location.href='cart.php'" method="post">
-                                                <button class="btn cartIcon btn-addto-cart" type="button" tabindex="0"><i class="icon anm anm-bag-l"></i></button>
-                                            </form>
-                                            <div class="wishlist-btn">
-                                                <a class="wishlist add-to-wishlist" href="wishlist.php">
-                                                    <i class="icon anm anm-heart-l"></i>
-                                                </a>
-                                            </div>
-                                            <div class="compare-btn">
-                                                <a class="compare add-to-compare" href="compare.php" title="Add to Compare">
-                                                    <i class="icon anm anm-random-r"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <!-- end product button -->
-                                    </div>
-                                    <!-- Variant -->
-                                    <ul class="swatches text-center">
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant3-1.jpg" alt="image" /></li>
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant3-2.jpg" alt="image" /></li>
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant3-3.jpg" alt="image" /></li>
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant3-4.jpg" alt="image" /></li>
-                                    </ul>
-                                    <!-- End Variant -->
-                                    <!-- End product details -->
-                                </div>
-                            </div>
-                            <div class="col-6 col-sm-6 col-md-4 col-lg-4 item grid-view-item style2">
-                                <div class="grid-view_image">
-                                    <!-- start product image -->
-                                    <a href="product-accordion.php" class="grid-view-item__link">
-                                        <!-- image -->
-                                        <img class="grid-view-item__image primary blur-up lazyload" data-src="assets/images/product-images/product-image4.jpg" src="assets/images/product-images/product-image4.jpg" alt="image" title="product">
-                                        <!-- End image -->
-                                        <!-- Hover image -->
-                                        <img class="grid-view-item__image hover blur-up lazyload" data-src="assets/images/product-images/product-image4-1.jpg" src="assets/images/product-images/product-image4-1.jpg" alt="image" title="product">
-                                        <!-- End hover image -->
-                                        <!-- product label -->
-                                        <div class="product-labels"><span class="lbl on-sale">Sale</span></div>
-                                        <!-- End product label -->
-                                    </a>
-                                    <!-- end product image -->
-                                    <!--start product details -->
-                                    <div class="product-details hoverDetails text-center mobile">
-                                        <!-- product name -->
-                                        <div class="product-name">
-                                            <a href="product-accordion.php">Cape Dress</a>
-                                        </div>
-                                        <!-- End product name -->
-                                        <!-- product price -->
-                                        <div class="product-price">
-                                            <span class="old-price">$900.00</span>
-                                            <span class="price">$788.00</span>
-                                        </div>
-                                        <!-- product button -->
-                                        <div class="button-set">
-                                            <a href="javascript:void(0)" title="Quick View" class="quick-view-popup quick-view" data-toggle="modal" data-target="#content_quickview">
-                                                <i class="icon anm anm-search-plus-r"></i>
-                                            </a>
-                                            <!-- Start product button -->
-                                            <form class="variants add" action="#" onclick="window.location.href='cart.php'" method="post">
-                                                <button class="btn cartIcon btn-addto-cart" type="button" tabindex="0"><i class="icon anm anm-bag-l"></i></button>
-                                            </form>
-                                            <div class="wishlist-btn">
-                                                <a class="wishlist add-to-wishlist" href="wishlist.php">
-                                                    <i class="icon anm anm-heart-l"></i>
-                                                </a>
-                                            </div>
-                                            <div class="compare-btn">
-                                                <a class="compare add-to-compare" href="compare.php" title="Add to Compare">
-                                                    <i class="icon anm anm-random-r"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <!-- end product button -->
-                                    </div>
-                                    <!-- Variant -->
-                                    <ul class="swatches text-center">
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant4-1.jpg" alt="image" /></li>
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant4-2.jpg" alt="image" /></li>
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant4-3.jpg" alt="image" /></li>
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant4-4.jpg" alt="image" /></li>
-                                    </ul>
-                                    <!-- End Variant -->
-                                    <!-- End product details -->
-                                </div>
-                            </div>
-                            <div class="col-6 col-sm-6 col-md-4 col-lg-4 item grid-view-item style2">
-                                <div class="grid-view_image">
-                                    <!-- start product image -->
-                                    <a href="product-accordion.php" class="grid-view-item__link">
-                                        <!-- image -->
-                                        <img class="grid-view-item__image primary blur-up lazyload" data-src="assets/images/product-images/product-image5.jpg" src="assets/images/product-images/product-image5.jpg" alt="image" title="product">
-                                        <!-- End image -->
-                                        <!-- Hover image -->
-                                        <img class="grid-view-item__image hover blur-up lazyload" data-src="assets/images/product-images/product-image5-1.jpg" src="assets/images/product-images/product-image5-1.jpg" alt="image" title="product">
-                                        <!-- End hover image -->
-                                        <!-- product label -->
-                                        <div class="product-labels"><span class="lbl on-sale">Sale</span></div>
-                                        <!-- End product label -->
-                                    </a>
-                                    <!-- end product image -->
-                                    <!--start product details -->
-                                    <div class="product-details hoverDetails text-center mobile">
-                                        <!-- product name -->
-                                        <div class="product-name">
-                                            <a href="product-accordion.php">Paper Dress</a>
-                                        </div>
-                                        <!-- End product name -->
-                                        <!-- product price -->
-                                        <div class="product-price">
-                                            <span class="old-price">$900.00</span>
-                                            <span class="price">$788.00</span>
-                                        </div>
-                                        <!-- product button -->
-                                        <div class="button-set">
-                                            <a href="javascript:void(0)" title="Quick View" class="quick-view-popup quick-view" data-toggle="modal" data-target="#content_quickview">
-                                                <i class="icon anm anm-search-plus-r"></i>
-                                            </a>
-                                            <!-- Start product button -->
-                                            <form class="variants add" action="#" onclick="window.location.href='cart.php'" method="post">
-                                                <button class="btn cartIcon btn-addto-cart" type="button" tabindex="0"><i class="icon anm anm-bag-l"></i></button>
-                                            </form>
-                                            <div class="wishlist-btn">
-                                                <a class="wishlist add-to-wishlist" href="wishlist.php">
-                                                    <i class="icon anm anm-heart-l"></i>
-                                                </a>
-                                            </div>
-                                            <div class="compare-btn">
-                                                <a class="compare add-to-compare" href="compare.php" title="Add to Compare">
-                                                    <i class="icon anm anm-random-r"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <!-- end product button -->
-                                    </div>
-                                    <!-- Variant -->
-                                    <ul class="swatches text-center">
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant3-1.jpg" alt="image" /></li>
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant3-2.jpg" alt="image" /></li>
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant3-3.jpg" alt="image" /></li>
-                                        <li class="swatch medium rounded"><img src="assets/images/product-images/variant3-4.jpg" alt="image" /></li>
-                                    </ul>
-                                    <!-- End Variant -->
-                                    <!-- End product details -->
-                                </div>
-                            </div>
-                            <div class="col-6 col-sm-6 col-md-4 col-lg-4 item grid-view-item style2">
-                                <div class="grid-view_image">
-                                    <!-- start product image -->
-                                    <a href="product-accordion.php" class="grid-view-item__link">
-                                        <!-- image -->
-                                        <img class="grid-view-item__image primary blur-up lazyload" data-src="assets/images/product-images/product-image16.jpg" src="assets/images/product-images/product-image16.jpg" alt="image" title="product">
-                                        <!-- End image -->
-                                        <!-- Hover image -->
-                                        <img class="grid-view-item__image hover blur-up lazyload" data-src="assets/images/product-images/product-image16-1.jpg" src="assets/images/product-images/product-image16-1.jpg" alt="image" title="product">
-                                        <!-- End hover image -->
-                                    </a>
-                                    <!-- end product image -->
-                                    <!--start product details -->
-                                    <div class="product-details hoverDetails text-center mobile">
-                                        <!-- product name -->
-                                        <div class="product-name">
-                                            <a href="product-accordion.php">Buttercup Dress</a>
-                                        </div>
-                                        <!-- End product name -->
-                                        <!-- product price -->
-                                        <div class="product-price">
-                                            <span class="price">$420.00</span>
-                                        </div>
-                                        <!-- product button -->
-                                        <div class="button-set">
-                                            <a href="javascript:void(0)" title="Quick View" class="quick-view-popup quick-view" data-toggle="modal" data-target="#content_quickview">
-                                                <i class="icon anm anm-search-plus-r"></i>
-                                            </a>
-                                            <!-- Start product button -->
-                                            <form class="variants add" action="#" onclick="window.location.href='cart.php'" method="post">
-                                                <button class="btn cartIcon btn-addto-cart" type="button" tabindex="0"><i class="icon anm anm-bag-l"></i></button>
-                                            </form>
-                                            <div class="wishlist-btn">
-                                                <a class="wishlist add-to-wishlist" href="wishlist.php">
-                                                    <i class="icon anm anm-heart-l"></i>
-                                                </a>
-                                            </div>
-                                            <div class="compare-btn">
-                                                <a class="compare add-to-compare" href="compare.php" title="Add to Compare">
-                                                    <i class="icon anm anm-random-r"></i>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <!-- end product button -->
-                                    </div>
-                                    <!-- End product details -->
-                                </div>
+            <!--Parallax Section-->
+            <div class="section">
+                <div class="hero hero--large hero__overlay bg-size">
+                    <img class="bg-img blur-up" src="assets/images/parallax-banners/cosmetic-parallax.jpg" alt="" />
+                    <div class="hero__inner">
+                        <div class="container">
+                            <div class="wrap-text center text-large font-bold">
+                                <h2 class="h2 mega-title">Super Soft</h2>
+                                <div class="rte-setting mega-subtitle">You wouldn't believe how amazing<br> this maplly lipstick are!</div>
+                                <a href="#" class="btn">Get Your set Today</a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--End Featured Product-->
+            <!--End Parallax Section-->
 
-            <!--Latest Blog-->
-            <div class="latest-blog section pt-0">
+            <!--Product Single-->
+            <div class="section product-single product-template__container">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                            <div class="section-header text-center">
-                                <h2 class="h2">Latest From our Blog</h2>
+                    <div class="product-single-wrap">
+                        <div class="row display-table">
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 display-table-cell">
+                                <img src="assets/images/cosmetic-product/single-product.jpg" alt="" class="product-featured-img" />
                             </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                            <div class="wrap-blog">
-                                <a href="blog-left-sidebar.php" class="article__grid-image">
-                                    <img src="assets/images/blog/post-img1.jpg" alt="It's all about how you wear" title="It's all about how you wear" class="blur-up lazyloaded" />
-                                </a>
-                                <div class="article__grid-meta article__grid-meta--has-image">
-                                    <div class="wrap-blog-inner">
-                                        <h2 class="h3 article__title">
-                                            <a href="blog-left-sidebar.php">It's all about how you wear</a>
-                                        </h2>
-                                        <span class="article__date">May 02, 2017</span>
-                                        <div class="rte article__grid-excerpt">
-                                            I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account...
+                            <div class="col-12 col-sm-12 col-md-6 col-lg-6 display-table-cell">
+                                <div class="product-single__meta">
+                                    <h2 class="grid_item-title h2">Steal The Deal</h2>
+                                    <h2 class="product-single__title h4">
+                                        <a href="#">Makeup &amp; Cosmetics Travel Bag</a>
+                                    </h2>
+                                    <p class="product-single__price">
+                                        <span class="money">$15.79</span>
+                                        <span class="product-price__price product-price__sale product-price__sale--single">
+                                            <span class="money">$9.21</span>
+                                        </span>
+                                    </p>
+                                    <div class="product-single__description rte">The perfect makeup bag for every personality! These fun makeup bags will hold all your cosmetic goodies! It can hold all your essentials including a full sized makeup palette &amp; brushes! Highlights:Zipper Closure</div>
+                                    <!-- Product Action -->
+                                    <div class="product-action clearfix">
+                                        <div class="product-form__item--quantity">
+                                            <div class="wrapQtyBtn">
+                                                <div class="qtyField">
+                                                    <a class="qtyBtn minus" href="javascript:void(0);"><i class="fa anm anm-minus-r" aria-hidden="true"></i></a>
+                                                    <input type="text" id="Quantity" name="quantity" value="1" class="product-form__input qty">
+                                                    <a class="qtyBtn plus" href="javascript:void(0);"><i class="fa anm anm-plus-r" aria-hidden="true"></i></a>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <ul class="list--inline article__meta-buttons">
-                                            <li><a href="blog-article.php">Read more</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                            <div class="wrap-blog">
-                                <a href="blog-left-sidebar.php" class="article__grid-image">
-                                    <img src="assets/images/blog/post-img2.jpg" alt="27 Days of Spring Fashion Recap" title="27 Days of Spring Fashion Recap" class="blur-up lazyloaded" />
-                                </a>
-                                <div class="article__grid-meta article__grid-meta--has-image">
-                                    <div class="wrap-blog-inner">
-                                        <h2 class="h3 article__title">
-                                            <a href="blog-right-sidebar.php">27 Days of Spring Fashion Recap</a>
-                                        </h2>
-                                        <span class="article__date">May 02, 2017</span>
-                                        <div class="rte article__grid-excerpt">
-                                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab...
+                                        <div class="product-form__item--submit">
+                                            <button type="button" name="add" class="btn product-form__cart-submit">
+                                                <span>Add to cart</span>
+                                            </button>
                                         </div>
-                                        <ul class="list--inline article__meta-buttons">
-                                            <li><a href="blog-article.php">Read more</a></li>
-                                        </ul>
+                                        <div class="display-table shareRow">
+                                            <div class="display-table-cell">
+                                                <div class="wishlist-btn">
+                                                    <a class="wishlist add-to-wishlist" href="#" title="Add to Wishlist"><i class="icon anm anm-heart-l" aria-hidden="true"></i> <span>Add to Wishlist</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
+                                    <!-- End Product Action -->
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--End Latest Blog-->
+            <!--End Product Single-->
 
             <!--Store Feature-->
             <div class="store-feature section">
@@ -2101,23 +1556,24 @@ session_start();
                             <ul class="display-table store-info">
                                 <li class="display-table-cell">
                                     <i class="icon anm anm-truck-l"></i>
-                                    <h5>Free Shipping &amp; Return</h5>
-                                    <span class="sub-text">Free shipping on all US orders</span>
+                                    <h5>Free Shipping Worldwide</h5>
+                                    <span class="sub-text">
+                                        Diam augue augue in fusce voluptatem
+                                    </span>
                                 </li>
                                 <li class="display-table-cell">
-                                    <i class="icon anm anm-dollar-sign-r"></i>
-                                    <h5>Money Guarantee</h5>
-                                    <span class="sub-text">30 days money back guarantee</span>
+                                    <i class="icon anm anm-money-bill-ar"></i>
+                                    <h5>Money Back Guarantee</h5>
+                                    <span class="sub-text">
+                                        Use this text to display your store information
+                                    </span>
                                 </li>
                                 <li class="display-table-cell">
                                     <i class="icon anm anm-comments-l"></i>
-                                    <h5>Online Support</h5>
-                                    <span class="sub-text">We support online 24/7 on day</span>
-                                </li>
-                                <li class="display-table-cell">
-                                    <i class="icon anm anm-credit-card-front-r"></i>
-                                    <h5>Secure Payments</h5>
-                                    <span class="sub-text">All payment are Secured and trusted.</span>
+                                    <h5>24/7 Help Center</h5>
+                                    <span class="sub-text">
+                                        Use this text to display your store information
+                                    </span>
                                 </li>
                             </ul>
                         </div>
@@ -2125,61 +1581,42 @@ session_start();
                 </div>
             </div>
             <!--End Store Feature-->
+
         </div>
         <!--End Body Content-->
 
         <!--Footer-->
-        <footer id="footer">
-            <div class="newsletter-section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-7 w-100 d-flex justify-content-start align-items-center">
-                            <div class="display-table">
-                                <div class="display-table-cell footer-newsletter">
-                                    <div class="section-header text-center">
-                                        <label class="h2"><span>sign up for </span>newsletter</label>
-                                    </div>
-                                    <form action="#" method="post">
-                                        <div class="input-group">
-                                            <input type="email" class="input-group__field newsletter__input" name="EMAIL" value="" placeholder="Email address" required="">
-                                            <span class="input-group__btn">
-                                                <button type="submit" class="btn newsletter__submit" name="commit" id="Subscribe"><span class="newsletter__submit-text--large">Subscribe</span></button>
-                                            </span>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-12 col-lg-5 d-flex justify-content-end align-items-center">
-                            <div class="footer-social">
-                                <ul class="list--inline site-footer__social-icons social-icons">
-                                    <li><a class="social-icons__link" href="#" target="_blank" title="Belle Multipurpose Bootstrap 4 Template on Facebook"><i class="icon icon-facebook"></i></a></li>
-                                    <li><a class="social-icons__link" href="#" target="_blank" title="Belle Multipurpose Bootstrap 4 Template on Twitter"><i class="icon icon-twitter"></i> <span class="icon__fallback-text">Twitter</span></a></li>
-                                    <li><a class="social-icons__link" href="#" target="_blank" title="Belle Multipurpose Bootstrap 4 Template on Pinterest"><i class="icon icon-pinterest"></i> <span class="icon__fallback-text">Pinterest</span></a></li>
-                                    <li><a class="social-icons__link" href="#" target="_blank" title="Belle Multipurpose Bootstrap 4 Template on Instagram"><i class="icon icon-instagram"></i> <span class="icon__fallback-text">Instagram</span></a></li>
-                                    <li><a class="social-icons__link" href="#" target="_blank" title="Belle Multipurpose Bootstrap 4 Template on Tumblr"><i class="icon icon-tumblr-alt"></i> <span class="icon__fallback-text">Tumblr</span></a></li>
-                                    <li><a class="social-icons__link" href="#" target="_blank" title="Belle Multipurpose Bootstrap 4 Template on YouTube"><i class="icon icon-youtube"></i> <span class="icon__fallback-text">YouTube</span></a></li>
-                                    <li><a class="social-icons__link" href="#" target="_blank" title="Belle Multipurpose Bootstrap 4 Template on Vimeo"><i class="icon icon-vimeo-alt"></i> <span class="icon__fallback-text">Vimeo</span></a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <footer id="footer" class="footer-5">
             <div class="site-footer">
                 <div class="container">
                     <!--Footer Links-->
                     <div class="footer-top">
                         <div class="row">
-                            <div class="col-12 col-sm-12 col-md-3 col-lg-3 footer-links">
-                                <h4 class="h4">Quick Shop</h4>
-                                <ul>
-                                    <li><a href="#">Women</a></li>
-                                    <li><a href="#">Men</a></li>
-                                    <li><a href="#">Kids</a></li>
-                                    <li><a href="#">Sportswear</a></li>
-                                    <li><a href="#">Sale</a></li>
+                            <div class="col-12 col-sm-12 col-md-3 col-lg-3 contact-box">
+                                <div class="footer-logo"><img src="assets/images/logo.svg" alt="Belle Multipurpose Html Template" title="Belle Multipurpose Html Template" /></div>
+                                <ul class="addressFooter">
+                                    <li><i class="icon anm anm-map-marker-al"></i>
+                                        <p>55 Gallaxy Enque,<br>2568 steet, 23568 NY</p>
+                                    </li>
+                                    <li class="phone"><i class="icon anm anm-phone-l"></i>
+                                        <p>(440) 000 000 0000</p>
+                                    </li>
+                                    <li class="email"><i class="icon anm anm-envelope-l"></i>
+                                        <p>sales@yousite.com</p>
+                                    </li>
                                 </ul>
+                                <div class="footer-social">
+                                    <h4 class="h4">Stay Connected</h4>
+                                    <ul class="list--inline site-footer__social-icons social-icons">
+                                        <li><a class="social-icons__link" href="#" target="_blank" title="Belle Multipurpose Bootstrap 4 Template on Facebook"><i class="icon icon-facebook"></i></a></li>
+                                        <li><a class="social-icons__link" href="#" target="_blank" title="Belle Multipurpose Bootstrap 4 Template on Twitter"><i class="icon icon-twitter"></i> <span class="icon__fallback-text">Twitter</span></a></li>
+                                        <li><a class="social-icons__link" href="#" target="_blank" title="Belle Multipurpose Bootstrap 4 Template on Pinterest"><i class="icon icon-pinterest"></i> <span class="icon__fallback-text">Pinterest</span></a></li>
+                                        <li><a class="social-icons__link" href="#" target="_blank" title="Belle Multipurpose Bootstrap 4 Template on Instagram"><i class="icon icon-instagram"></i> <span class="icon__fallback-text">Instagram</span></a></li>
+                                        <li><a class="social-icons__link" href="#" target="_blank" title="Belle Multipurpose Bootstrap 4 Template on Tumblr"><i class="icon icon-tumblr-alt"></i> <span class="icon__fallback-text">Tumblr</span></a></li>
+                                        <li><a class="social-icons__link" href="#" target="_blank" title="Belle Multipurpose Bootstrap 4 Template on YouTube"><i class="icon icon-youtube"></i> <span class="icon__fallback-text">YouTube</span></a></li>
+                                        <li><a class="social-icons__link" href="#" target="_blank" title="Belle Multipurpose Bootstrap 4 Template on Vimeo"><i class="icon icon-vimeo-alt"></i> <span class="icon__fallback-text">Vimeo</span></a></li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="col-12 col-sm-12 col-md-3 col-lg-3 footer-links">
                                 <h4 class="h4">Informations</h4>
@@ -2201,19 +1638,21 @@ session_start();
                                     <li><a href="#">Support Center</a></li>
                                 </ul>
                             </div>
-                            <div class="col-12 col-sm-12 col-md-3 col-lg-3 contact-box">
-                                <h4 class="h4">Contact Us</h4>
-                                <ul class="addressFooter">
-                                    <li><i class="icon anm anm-map-marker-al"></i>
-                                        <p>55 Gallaxy Enque,<br>2568 steet, 23568 NY</p>
-                                    </li>
-                                    <li class="phone"><i class="icon anm anm-phone-s"></i>
-                                        <p>(440) 000 000 0000</p>
-                                    </li>
-                                    <li class="email"><i class="icon anm anm-envelope-l"></i>
-                                        <p>sales@yousite.com</p>
-                                    </li>
-                                </ul>
+                            <div class="col-12 col-sm-12 col-md-3 col-lg-3">
+                                <div class="display-table">
+                                    <div class="display-table-cell footer-newsletter">
+                                        <form action="#" method="post">
+                                            <label class="h4">Newsletter</label>
+                                            <p>Be the first to hear about new trending and offers and see how you've helped.</p>
+                                            <div class="input-group">
+                                                <input type="email" class="input-group__field newsletter__input" name="EMAIL" value="" placeholder="Email address" required="">
+                                                <span class="input-group__btn">
+                                                    <button type="submit" class="btn newsletter__submit" name="commit" id="Subscribe"><span class="newsletter__submit-text--large">Subscribe</span></button>
+                                                </span>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -2226,14 +1665,7 @@ session_start();
                             <!--End Footer Copyright-->
                             <!--Footer Payment Icon-->
                             <div class="col-12 col-sm-12 col-md-6 col-lg-6 order-0 order-md-1 order-lg-1 order-sm-0 payment-icons text-right text-md-center">
-                                <ul class="payment-icons list--inline">
-                                    <li><i class="icon fa fa-cc-visa" aria-hidden="true"></i></li>
-                                    <li><i class="icon fa fa-cc-mastercard" aria-hidden="true"></i></li>
-                                    <li><i class="icon fa fa-cc-discover" aria-hidden="true"></i></li>
-                                    <li><i class="icon fa fa-cc-paypal" aria-hidden="true"></i></li>
-                                    <li><i class="icon fa fa-cc-amex" aria-hidden="true"></i></li>
-                                    <li><i class="icon fa fa-credit-card" aria-hidden="true"></i></li>
-                                </ul>
+                                <img src="assets/images/safepayment.png" alt="Payment">
                             </div>
                             <!--End Footer Payment Icon-->
                         </div>
@@ -2331,7 +1763,7 @@ session_start();
                                                         <div class="wrapQtyBtn">
                                                             <div class="qtyField">
                                                                 <a class="qtyBtn minus" href="javascript:void(0);"><i class="fa anm anm-minus-r" aria-hidden="true"></i></a>
-                                                                <input type="text" id="Quantity" name="quantity" value="1" class="product-form__input qty">
+                                                                <input type="text" id="qty" name="quantity" value="1" class="product-form__input qty">
                                                                 <a class="qtyBtn plus" href="javascript:void(0);"><i class="fa anm anm-plus-r" aria-hidden="true"></i></a>
                                                             </div>
                                                         </div>
@@ -2451,6 +1883,6 @@ session_start();
     </div>
 </body>
 
-<!-- belle/index.php   11 Nov 2019 12:20:55 GMT -->
+<!-- belle/home5-cosmetic.php   11 Nov 2019 12:28:00 GMT -->
 
 </html>

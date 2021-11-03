@@ -1,33 +1,12 @@
-<?php
-include 'config/config.php';
-session_start();
-if (isset($_POST['userlogsub'])) {
-  $sql = $con->prepare("SELECT email,fname FROM user WHERE email=? AND password=? AND status='active'");
-  $sql->bindParam(1, $_POST['email']);
-  $sql->bindParam(2, md5($_POST['password']));
-  $sql->execute();
-
-  $result = $sql->rowCount();
-  if ($result > 0) {
-    $msg = "Login Successful";
-    $_SESSION['email'] = $row_res['email'];
-    $_SESSION['fname'] = $row_res['fname'];
-    header('Location:index.php');
-  } else {
-    $msg = "Login failed";
-  }
-}
-$con = '';
-?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
-<!-- belle/login.php   11 Nov 2019 12:22:27 GMT -->
+<!-- belle/lookbook2.php   11 Nov 2019 12:44:51 GMT -->
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Account &ndash; Belle Multipurpose Bootstrap 4 Template</title>
+  <title>Lookbook Style2 &ndash; Belle Multipurpose Bootstrap 4 Template</title>
   <meta name="description" content="description">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Favicon -->
@@ -41,7 +20,7 @@ $con = '';
   <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
-<body class="page-template belle">
+<body class="page-template lookbook-template belle">
   <div class="pageWrapper">
     <!--Search Form Drawer-->
     <div class="search">
@@ -116,7 +95,7 @@ $con = '';
               </button>
             </div>
             <!--Desktop Menu-->
-            <nav class="grid__item" id="AccessibleNav" role="navigation">
+            <nav class="grid__item" id="AccessibleNav">
               <!-- for mobile -->
               <ul id="siteNav" class="site-nav medium center hidearrow">
                 <li class="lvl1 parent megamenu"><a href="#">Home <i class="anm anm-angle-down-l"></i></a>
@@ -562,46 +541,64 @@ $con = '';
       <div class="page section-header text-center">
         <div class="page-title">
           <div class="wrapper">
-            <h1 class="page-width">Login</h1>
+            <h1 class="page-width">Lookbook Style2</h1>
           </div>
         </div>
       </div>
-      <!--End Page Title-->
 
+      <!-- Lookbook Start -->
       <div class="container">
         <div class="row">
-          <div class="col-12 col-sm-12 col-md-6 col-lg-6 main-col offset-md-3">
-            <div class="mb-4">
-              <form method="post" action="#" id="CustomerLoginForm" accept-charset="UTF-8" class="contact-form">
-                <div class="row">
-                  <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="form-group">
-                      <label for="CustomerEmail">Email</label>
-                      <input type="email" name="email" placeholder="" id="CustomerEmail" class="" autocorrect="off" autocapitalize="off" autofocus="">
-                    </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="lookbook-1">
+              <div class="lookbook grid grid-masonary">
+                <div class="grid-sizer"></div>
+                <div class="grid-lookbook grid-item">
+                  <img src="assets/images/lookbook-7.jpg" alt="">
+                  <div class="caption">
+                    <h2>Women's Winter wear</h2>
+                    <a class="btn" href="#">Shop The Collectons <i class="fa fa-caret-right" aria-hidden="true"></i> </a>
                   </div>
-                  <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="form-group">
-                      <label for="CustomerPassword">Password</label>
-                      <input type="password" value="" name="password" placeholder="" id="CustomerPassword" class="">
-                    </div>
-                  </div>
+                  <a class="overlay" href="#"></a>
                 </div>
-                <div class="row">
-                  <div class="text-center col-12 col-sm-12 col-md-12 col-lg-12">
-                    <input type="submit" name="userlogsub" class="btn mb-3" value="Sign In">
-                    <p class="mb-4">
-                      <a href="#" id="RecoverPassword">Forgot your password?</a> &nbsp; | &nbsp;
-                      <a href="register.php" id="customer_register_link">Create account</a>
-                    </p>
+                <div class="grid-lookbook grid-item">
+                  <img src="assets/images/lookbook-8.jpg" alt="">
+                  <div class="caption">
+                    <h2>Collection 2017 special</h2>
+                    <a class="btn" href="#">Shop The Collectons <i class="fa fa-caret-right" aria-hidden="true"></i> </a>
                   </div>
+                  <a class="overlay" href="#"></a>
                 </div>
-              </form>
+                <div class="grid-lookbook grid-item">
+                  <img src="assets/images/lookbook-9.jpg" alt="">
+                  <div class="caption">
+                    <h2>Summer Collection</h2>
+                    <a class="btn" href="#">Shop The Collectons <i class="fa fa-caret-right" aria-hidden="true"></i> </a>
+                  </div>
+                  <a class="overlay" href="#"></a>
+                </div>
+                <div class="grid-lookbook grid-item">
+                  <img src="assets/images/lookbook-10.jpg" alt="">
+                  <div class="caption">
+                    <h2>Kids Wear</h2>
+                    <a class="btn" href="#">Shop The Collectons <i class="fa fa-caret-right" aria-hidden="true"></i> </a>
+                  </div>
+                  <a class="overlay" href="#"></a>
+                </div>
+                <div class="grid-lookbook grid-item">
+                  <img src="assets/images/lookbook-11.jpg" alt="">
+                  <div class="caption">
+                    <h2>lingerie collection</h2>
+                    <a class="btn" href="#">Shop The Collectons <i class="fa fa-caret-right" aria-hidden="true"></i> </a>
+                  </div>
+                  <a class="overlay" href="#"></a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
+      <!-- Lookbook Start -->
     </div>
     <!--End Body Content-->
 
@@ -728,15 +725,30 @@ $con = '';
     <script src="assets/js/vendor/jquery.cookie.js"></script>
     <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
     <script src="assets/js/vendor/wow.min.js"></script>
+    <script src="assets/js/vendor/masonry.js"></script>
     <!-- Including Javascript -->
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/plugins.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/lazysizes.js"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+      // Grid Masonry Lookbook
+      // init Masonry
+      var $grid = $('.grid').masonry({
+        itemSelector: '.grid-item',
+        percentPosition: true,
+        columnWidth: '.grid-sizer'
+      });
+
+      // layout Masonry after each image loads
+      $grid.imagesLoaded().progress(function() {
+        $grid.masonry();
+      });
+    </script>
   </div>
 </body>
 
-<!-- belle/login.php   11 Nov 2019 12:22:27 GMT -->
+<!-- belle/lookbook2.php   11 Nov 2019 12:45:12 GMT -->
 
 </html>

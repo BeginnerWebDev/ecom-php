@@ -1,33 +1,12 @@
-<?php
-include 'config/config.php';
-session_start();
-if (isset($_POST['userlogsub'])) {
-  $sql = $con->prepare("SELECT email,fname FROM user WHERE email=? AND password=? AND status='active'");
-  $sql->bindParam(1, $_POST['email']);
-  $sql->bindParam(2, md5($_POST['password']));
-  $sql->execute();
-
-  $result = $sql->rowCount();
-  if ($result > 0) {
-    $msg = "Login Successful";
-    $_SESSION['email'] = $row_res['email'];
-    $_SESSION['fname'] = $row_res['fname'];
-    header('Location:index.php');
-  } else {
-    $msg = "Login failed";
-  }
-}
-$con = '';
-?>
 <!DOCTYPE html>
 <html class="no-js" lang="en">
 
-<!-- belle/login.php   11 Nov 2019 12:22:27 GMT -->
+<!-- belle/404.php   11 Nov 2019 12:45:12 GMT -->
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Account &ndash; Belle Multipurpose Bootstrap 4 Template</title>
+  <title>404 Page Not Found &ndash; Belle Multipurpose Bootstrap 4 Template</title>
   <meta name="description" content="description">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Favicon -->
@@ -41,7 +20,7 @@ $con = '';
   <link rel="stylesheet" href="assets/css/responsive.css">
 </head>
 
-<body class="page-template belle">
+<body class="page-template lookbook-template error-page belle">
   <div class="pageWrapper">
     <!--Search Form Drawer-->
     <div class="search">
@@ -116,7 +95,7 @@ $con = '';
               </button>
             </div>
             <!--Desktop Menu-->
-            <nav class="grid__item" id="AccessibleNav" role="navigation">
+            <nav class="grid__item" id="AccessibleNav">
               <!-- for mobile -->
               <ul id="siteNav" class="site-nav medium center hidearrow">
                 <li class="lvl1 parent megamenu"><a href="#">Home <i class="anm anm-angle-down-l"></i></a>
@@ -310,7 +289,7 @@ $con = '';
           </div>
           <div class="col-4 col-sm-3 col-md-3 col-lg-2">
             <div class="site-cart">
-              <a href="#;" class="site-header__cart" title="Cart">
+              <a href="#" class="site-header__cart" title="Cart">
                 <i class="icon anm anm-bag-l"></i>
                 <span id="CartCount" class="site-header__cart-count" data-cart-render="item_count">2</span>
               </a>
@@ -457,7 +436,6 @@ $con = '';
               <ul>
                 <li><a href="shop-left-sidebar.php" class="site-nav">Product Countdown </a></li>
                 <li><a href="shop-right-sidebar.php" class="site-nav">Infinite Scrolling</a></li>
-
                 <li><a href="shop-grid-3.php" class="site-nav">Pagination - Classic</a></li>
                 <li><a href="shop-grid-6.php" class="site-nav">Pagination - Load More</a></li>
                 <li><a href="product-labels.php" class="site-nav">Dynamic Product Labels</a></li>
@@ -558,50 +536,19 @@ $con = '';
 
     <!--Body Content-->
     <div id="page-content">
-      <!--Page Title-->
-      <div class="page section-header text-center">
-        <div class="page-title">
-          <div class="wrapper">
-            <h1 class="page-width">Login</h1>
-          </div>
-        </div>
-      </div>
-      <!--End Page Title-->
-
+      <!-- Lookbook Start -->
       <div class="container">
         <div class="row">
-          <div class="col-12 col-sm-12 col-md-6 col-lg-6 main-col offset-md-3">
-            <div class="mb-4">
-              <form method="post" action="#" id="CustomerLoginForm" accept-charset="UTF-8" class="contact-form">
-                <div class="row">
-                  <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="form-group">
-                      <label for="CustomerEmail">Email</label>
-                      <input type="email" name="email" placeholder="" id="CustomerEmail" class="" autocorrect="off" autocapitalize="off" autofocus="">
-                    </div>
-                  </div>
-                  <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                    <div class="form-group">
-                      <label for="CustomerPassword">Password</label>
-                      <input type="password" value="" name="password" placeholder="" id="CustomerPassword" class="">
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="text-center col-12 col-sm-12 col-md-12 col-lg-12">
-                    <input type="submit" name="userlogsub" class="btn mb-3" value="Sign In">
-                    <p class="mb-4">
-                      <a href="#" id="RecoverPassword">Forgot your password?</a> &nbsp; | &nbsp;
-                      <a href="register.php" id="customer_register_link">Create account</a>
-                    </p>
-                  </div>
-                </div>
-              </form>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="empty-page-content text-center">
+              <h1>404 Page Not Found</h1>
+              <p>The page you requested does not exist.</p>
+              <p><a href="http://annimexweb.com/" class="btn btn--has-icon-after">Continue shopping <i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
             </div>
           </div>
         </div>
       </div>
-
+      <!-- Lookbook Start -->
     </div>
     <!--End Body Content-->
 
@@ -728,6 +675,7 @@ $con = '';
     <script src="assets/js/vendor/jquery.cookie.js"></script>
     <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
     <script src="assets/js/vendor/wow.min.js"></script>
+    <script src="assets/js/vendor/masonry.js" type="text/javascript"></script>
     <!-- Including Javascript -->
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/plugins.js"></script>
@@ -737,6 +685,6 @@ $con = '';
   </div>
 </body>
 
-<!-- belle/login.php   11 Nov 2019 12:22:27 GMT -->
+<!-- belle/404.php   11 Nov 2019 12:45:12 GMT -->
 
 </html>
