@@ -1,3 +1,23 @@
+<?php
+include_once('./db/config.php');
+
+if (isset($_POST['addproduct'])) {
+    $folder = "./upload/";
+    $productimg = $_FILES['productimg']['name'];
+    $productimage = $_FILES['productimg']['tmp_name'];
+    move_uploaded_file($productimage, $folder . $productimg);
+
+    $sql = $con->prepare("INSERT INTO product(productname,productdesc,producturl,productimg) VALUES(?,?,?,?)");
+    $sql->bindParam(1, $_POST['productname']);
+    $sql->bindParam(2, $_POST['productdesc']);
+    $sql->bindParam(3, $_POST['producturl']);
+    $sql->bindParam(4, $productimg);
+
+    $sql->execute();
+
+    $con = '';
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -51,20 +71,50 @@
 
                     <!-- Content Row -->
 
+                    <div class="my-5">
+                        <div class="row">
+                            <div class="col-md-6 mx-auto mt-5">
+                                <h1 class="text-center mb-5">Add Product</h1>
+                                <form method="post" enctype="multipart/form-data">
+                                    <div class="mb-3">
+                                        <label for="productname" class="form-label">Product Name</label>
+                                        <input name='productname' type="text" class="form-control" id="productname" placeholder="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="productdesc" class="form-label">Product Description</label>
+                                        <textarea name='productdesc' class="form-control" id="productdesc" rows="3"></textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="producturl" class="form-label">Product URL</label>
+                                        <input type="text" name='producturl' class="form-control" id="producturl" placeholder="">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="productimg" class="form-label">Product Image</label>
+                                        <input type="file" name='productimg' class="form-control" id="productimg" placeholder="">
+                                    </div>
+                                    <input type="submit" class="btn btn-primary px-4 py-2 my-3" name='addproduct' value="Add Product" />
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <!-- /.container-fluid -->
-
             </div>
-            <!-- End of Main Content -->
-
             <!-- Footer -->
             <?php include_once('./php/footer.php'); ?>
             <!-- End of Footer -->
-
         </div>
-        <!-- End of Content Wrapper -->
+        <!-- /.container-fluid -->
 
     </div>
+    <!-- End of Main Content -->
+
+
+
+
+
+
+
     <!-- End of Page Wrapper -->
 
     <!-- Scroll to Top Button-->

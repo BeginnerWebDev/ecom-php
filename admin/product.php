@@ -1,3 +1,9 @@
+<?php
+
+include_once('./db/config.php');
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -50,6 +56,75 @@
                     </div>
 
                     <!-- Content Row -->
+
+                    <div class="card shadow mb-4">
+                        <div class="card-header py-3">
+                            <h6 class="m-0 font-weight-bold text-primary">
+                                DataTables Example
+                            </h6>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                    <thead>
+                                        <tr>
+                                            <th>id</th>
+                                            <th>Product Name</th>
+                                            <th>Product Description</th>
+                                            <th>Product URL</th>
+                                            <th>Product Image</th>
+                                            <th>Edit</th>
+                                            <th>Delete</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <?php
+                                        $allData = $con->prepare("SELECT * FROM product");
+                                        $allData->execute();
+                                        $fetchallrows = $allData->fetchAll(PDO::FETCH_ASSOC);
+                                        if (count($fetchallrows)) {
+                                            foreach ($fetchallrows as $val) {
+                                        ?>
+                                                <tr>
+                                                    <td>
+                                                        <?php
+                                                        echo $val['id']
+                                                        ?>
+                                                    </td>
+
+                                                    <td>
+                                                        <?php
+                                                        echo $val['productname']
+                                                        ?>
+                                                    </td>
+                                                    <td>
+                                                        <?php
+                                                        echo $val['productdesc']
+                                                        ?>
+                                                    </td>
+                                                    <td>
+                                                        <?php
+                                                        echo $val['producturl']
+                                                        ?>
+                                                    </td>
+                                                    <td>
+                                                        <img style="width: 100px;height:100px;" src="./upload/<?php echo $val['productimg'] ?>" alt="">
+                                                    </td>
+                                                    <td>
+                                                        <a href="" class="btn btn-success px-3">Edit</a>
+                                                    </td>
+                                                    <td>
+                                                        <a href="" class="btn btn-danger px-3">Edit</a>
+                                                    </td>
+                                                </tr>
+                                        <?php }
+                                        } ?>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
                 <!-- /.container-fluid -->

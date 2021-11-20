@@ -92,7 +92,7 @@
                 var email = $('#InputEmail').val();
                 var password = $('#InputPassword').val();
                 var retypePassword = $('#RepeatPassword').val();
-                console.log(fullName + ' ' + email + ' ' + password + ' ' + retypePassword)
+
                 if (firstname == '' || lastname == '') {
                     alert('plase provide your fist name or last name');
                 } else if (email == '') {
@@ -113,7 +113,8 @@
                             adminpassword: password
                         },
                         success: function(data) {
-                            if (data == 1) {
+                            console.log(data)
+                            if (data == 11) {
                                 $('#user').trigger('reset');
                                 window.location.href = 'http://localhost/ecomerce/admin/index.php';
                             } else {

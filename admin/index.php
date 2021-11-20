@@ -85,33 +85,34 @@
     <!-- Custom scripts for all pages-->
     <script src="js/sb-admin-2.min.js"></script>
     <script>
-       $(document).ready(function(){
-          $('#login').on('click',function(event){
-            event.preventDefault();
-            var email = $('#InputEmail').val();
-            var password = $('#InputPassword').val();
-            if(email == '' || password == ''){
-                alert('Plase eneter your email and password');
-            }else{
-                $.ajax({
-                  url : './api/checklogin.php',
-                  type : 'POST',
-                  data : {
-                    email:email,
-                    password:password
-                  },
-                  success: function(data){
-                    if(data == 1){
-                    $('#user').trigger('reset');
-                    window.location.href = 'http://localhost/ecomerce/admin/dashboard.php';
-                    }else{
-                        alert('plase provide correct email or password');
-                    }
-                  }
-                });
-            }
-          })
-       });
+        $(document).ready(function() {
+            $('#login').on('click', function(event) {
+                event.preventDefault();
+                var email = $('#InputEmail').val();
+                var password = $('#InputPassword').val();
+                if (email == '' || password == '') {
+                    alert('Plase eneter your email and password');
+                } else {
+                    $.ajax({
+                        url: './api/checklogin.php',
+                        type: 'POST',
+                        data: {
+                            email: email,
+                            password: password
+                        },
+                        success: function(data) {
+                            console.log(data)
+                            if (data == 1) {
+                                $('#user').trigger('reset');
+                                window.location.href = 'http://localhost/ecomerce/admin/dashboard.php';
+                            } else {
+                                alert('plase provide correct email or password');
+                            }
+                        }
+                    });
+                }
+            })
+        });
     </script>
 
 </body>
