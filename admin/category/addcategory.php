@@ -1,20 +1,23 @@
 <?php
-include_once('./db/config.php');
+include_once('../db/config.php');
 
-if (isset($_POST['addproduct'])) {
-    $folder = "./upload/";
-    $productimg = $_FILES['productimg']['name'];
-    $productimage = $_FILES['productimg']['tmp_name'];
-    move_uploaded_file($productimage, $folder . $productimg);
+if (isset($_POST['addcategory'])) {
+    $folder = "../upload/categoryimg/";
+    $categoryimg = $_FILES['categoryimg']['name'];
+    $proimgarr = explode('.', $categoryimg);
+    $new_img = time() . '_' . rand() . '.' . $proimgarr[1];
+    $productimage = $_FILES['categoryimg']['tmp_name'];
+    move_uploaded_file($productimage, $folder . $new_img);
 
-    $sql = $con->prepare("INSERT INTO product(productname,productdesc,producturl,productimg) VALUES(?,?,?,?)");
-    $sql->bindParam(1, $_POST['productname']);
-    $sql->bindParam(2, $_POST['productdesc']);
-    $sql->bindParam(3, $_POST['producturl']);
-    $sql->bindParam(4, $productimg);
+    $sql = $con->prepare("INSERT INTO category(cat_name,cat_desc,cat_image,cat_slug) VALUES(?,?,?,?)");
+    $sql->bindParam(1, $_POST['categoryname']);
+    $sql->bindParam(2, $_POST['categorydesc']);
+    $sql->bindParam(3, $_POST['categoryslug']);
+    $sql->bindParam(4, $new_img);
 
-    $sql->execute();
-
+    if ($sql->execute()) {
+        header('Location: http://localhost/ecomerce/admin/category/category.php');
+    }
     $con = '';
 }
 ?>
@@ -32,11 +35,11 @@ if (isset($_POST['addproduct'])) {
     <title> Admin Dashboard</title>
 
     <!-- Custom fonts for this template-->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="../css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
 
@@ -46,7 +49,7 @@ if (isset($_POST['addproduct'])) {
     <div id="wrapper">
 
 
-        <?php include_once('./php/sidebar.php') ?>
+        <?php include_once('../php/sidebar.php') ?>
 
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
@@ -57,7 +60,7 @@ if (isset($_POST['addproduct'])) {
             <div id="content">
 
                 <!-- NavBar Start -->
-                <?php include_once('./php/navbar.php'); ?>
+                <?php include_once('../php/navbar.php'); ?>
                 <!-- NavBar End -->
 
                 <!-- Begin Page Content -->
@@ -74,25 +77,25 @@ if (isset($_POST['addproduct'])) {
                     <div class="my-5">
                         <div class="row">
                             <div class="col-md-6 mx-auto mt-5">
-                                <h1 class="text-center mb-5">Add Product</h1>
+                                <h1 class="text-center mb-5">Add Category</h1>
                                 <form method="post" enctype="multipart/form-data">
                                     <div class="mb-3">
-                                        <label for="productname" class="form-label">Product Name</label>
-                                        <input name='productname' type="text" class="form-control" id="productname" placeholder="">
+                                        <label for="productname" class="form-label">Category Name</label>
+                                        <input name='categoryname' type="text" class="form-control" id="categoryname" placeholder="">
                                     </div>
                                     <div class="mb-3">
-                                        <label for="productdesc" class="form-label">Product Description</label>
-                                        <textarea name='productdesc' class="form-control" id="productdesc" rows="3"></textarea>
+                                        <label for="productdesc" class="form-label">Category Description</label>
+                                        <textarea name='categorydesc' class="form-control" id="categorydesc" rows="3"></textarea>
                                     </div>
                                     <div class="mb-3">
-                                        <label for="producturl" class="form-label">Product URL</label>
-                                        <input type="text" name='producturl' class="form-control" id="producturl" placeholder="">
+                                        <label for="producturl" class="form-label">Category Slug</label>
+                                        <input type="text" name='categoryslug' class="form-control" id="categoryslug" placeholder="">
                                     </div>
                                     <div class="mb-3">
-                                        <label for="productimg" class="form-label">Product Image</label>
-                                        <input type="file" name='productimg' class="form-control" id="productimg" placeholder="">
+                                        <label for="productimg" class="form-label">Category Image</label>
+                                        <input type="file" name='categoryimg' class="form-control" id="categoryimg" placeholder="">
                                     </div>
-                                    <input type="submit" class="btn btn-primary px-4 py-2 my-3" name='addproduct' value="Add Product" />
+                                    <input type="submit" class="btn btn-primary px-4 py-2 my-3" name='addcategory' value="Add Category" />
                                 </form>
                             </div>
                         </div>
@@ -101,7 +104,7 @@ if (isset($_POST['addproduct'])) {
                 </div>
             </div>
             <!-- Footer -->
-            <?php include_once('./php/footer.php'); ?>
+            <?php include_once('../php/footer.php'); ?>
             <!-- End of Footer -->
         </div>
         <!-- /.container-fluid -->
@@ -142,21 +145,21 @@ if (isset($_POST['addproduct'])) {
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
+    <script src="../js/sb-admin-2.min.js"></script>
 
     <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="../vendor/chart.js/Chart.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
+    <script src="../js/demo/chart-area-demo.js"></script>
+    <script src="../js/demo/chart-pie-demo.js"></script>
 
 </body>
 

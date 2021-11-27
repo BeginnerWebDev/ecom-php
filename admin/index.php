@@ -101,6 +101,8 @@
                             password: password
                         },
                         success: function(data) {
+
+
                             console.log(data)
                             if (data == 1) {
                                 $('#user').trigger('reset');
@@ -108,6 +110,7 @@
                             } else {
                                 alert('plase provide correct email or password');
                             }
+
                         }
                     });
                 }

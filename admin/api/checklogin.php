@@ -23,15 +23,26 @@ session_start();
 $status = 'active';
 
 $checksql =  $con->prepare("SELECT email,fullname FROM admin WHERE email = ? AND password = ? AND status = ?");
-
+$checksql1 =  $con->prepare("SELECT email,fullname FROM admin");
 $checksql->bindParam(1, $_POST['email']);
 $checksql->bindParam(2, $_POST['password']);
 $checksql->bindParam(3, $status);
 $result = $checksql->execute();
-
+$checksql1->execute();
+$users = $checksql1->fetchAll();
+	
 if ($result == 1) {
-	// $_SESSION['email'] = $row_res['email'];
-	// $_SESSION['fullname'] = $row_res['fullname'];
+	
+	foreach($users as $user) 
+ {  
+
+	 $fullname=$user['fullname'];
+     $email=$user['email'];
+
+ }
+	 
+	 $_SESSION['email'] = $email;
+	 $_SESSION['fullname'] = $fullname;
 	echo 1;
 } else {
 	echo 0;

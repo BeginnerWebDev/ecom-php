@@ -1,6 +1,6 @@
 <?php
 
-include_once('./db/config.php');
+include_once('../db/config.php');
 
 ?>
 
@@ -18,11 +18,11 @@ include_once('./db/config.php');
     <title> Admin Dashboard</title>
 
     <!-- Custom fonts for this template-->
-    <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+    <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
     <!-- Custom styles for this template-->
-    <link href="css/sb-admin-2.min.css" rel="stylesheet">
+    <link href="../css/sb-admin-2.min.css" rel="stylesheet">
 
 </head>
 
@@ -32,7 +32,7 @@ include_once('./db/config.php');
     <div id="wrapper">
 
 
-        <?php include_once('./php/sidebar.php') ?>
+        <?php include_once('../php/sidebar.php') ?>
 
         <!-- Content Wrapper -->
         <div id="content-wrapper" class="d-flex flex-column">
@@ -43,7 +43,7 @@ include_once('./db/config.php');
             <div id="content">
 
                 <!-- NavBar Start -->
-                <?php include_once('./php/navbar.php'); ?>
+                <?php include_once('../php/navbar.php'); ?>
                 <!-- NavBar End -->
 
                 <!-- Begin Page Content -->
@@ -69,17 +69,19 @@ include_once('./db/config.php');
                                     <thead>
                                         <tr>
                                             <th>id</th>
-                                            <th>Product Name</th>
-                                            <th>Product Description</th>
-                                            <th>Product URL</th>
-                                            <th>Product Image</th>
+                                            <th>Category Name</th>
+                                            <th>Category Description</th>
+                                            <th>Category Slug</th>
+                                            <th>Category Image</th>
                                             <th>Edit</th>
                                             <th>Delete</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <?php
-                                        $allData = $con->prepare("SELECT * FROM product");
+                                        $is_delete = 1;
+                                        $allData = $con->prepare("SELECT * FROM category where is_delete=?");
+                                        $allData->bindParam(1, $is_delete);
                                         $allData->execute();
                                         $fetchallrows = $allData->fetchAll(PDO::FETCH_ASSOC);
                                         if (count($fetchallrows)) {
@@ -94,27 +96,27 @@ include_once('./db/config.php');
 
                                                     <td>
                                                         <?php
-                                                        echo $val['productname']
+                                                        echo $val['cat_name']
                                                         ?>
                                                     </td>
                                                     <td>
                                                         <?php
-                                                        echo $val['productdesc']
+                                                        echo $val['cat_desc']
                                                         ?>
                                                     </td>
                                                     <td>
                                                         <?php
-                                                        echo $val['producturl']
+                                                        echo $val['cat_slug']
                                                         ?>
                                                     </td>
                                                     <td>
-                                                        <img style="width: 100px;height:100px;" src="./upload/<?php echo $val['productimg'] ?>" alt="">
+                                                        <img style="width: 100px;height:100px;" src="../upload/categoryimg/<?php echo $val['cat_image'] ?>" alt="">
                                                     </td>
                                                     <td>
-                                                        <a href="" class="btn btn-success px-3">Edit</a>
+                                                        <a href="editcategory.php?id=<?php echo $val['id']; ?>" class="btn btn-success px-3">Edit</a>
                                                     </td>
                                                     <td>
-                                                        <a href="" class="btn btn-danger px-3">Edit</a>
+                                                        <a href="deletecategory.php?id=<?php echo $val['id']; ?>" onclick="return confirm('Do you really want to delete');" class="btn btn-danger px-3">Delete</a>
                                                     </td>
                                                 </tr>
                                         <?php }
@@ -133,7 +135,7 @@ include_once('./db/config.php');
             <!-- End of Main Content -->
 
             <!-- Footer -->
-            <?php include_once('./php/footer.php'); ?>
+            <?php include_once('../php/footer.php'); ?>
             <!-- End of Footer -->
 
         </div>
@@ -167,21 +169,21 @@ include_once('./db/config.php');
     </div>
 
     <!-- Bootstrap core JavaScript-->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
     <!-- Core plugin JavaScript-->
-    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
 
     <!-- Custom scripts for all pages-->
-    <script src="js/sb-admin-2.min.js"></script>
+    <script src="../js/sb-admin-2.min.js"></script>
 
     <!-- Page level plugins -->
-    <script src="vendor/chart.js/Chart.min.js"></script>
+    <script src="../vendor/chart.js/Chart.min.js"></script>
 
     <!-- Page level custom scripts -->
-    <script src="js/demo/chart-area-demo.js"></script>
-    <script src="js/demo/chart-pie-demo.js"></script>
+    <script src="../js/demo/chart-area-demo.js"></script>
+    <script src="../js/demo/chart-pie-demo.js"></script>
 
 </body>
 
